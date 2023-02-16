@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
-<fieldset>
-<body>
-    <h1 class="heading">Let's play</h1>
 
-<main>
 
-    <div class="primary-container">
-    </div>
+    <body>
+        <h1 class="heading">Let's play</h1>
 
-    <div class="question-zone">    
-    </div>
+        <main>
 
-    <div id="quiz-zone">
-    </div>
+            <div class="primary-container">
+            </div>
 
-    <div class="question-container">
-    </div>
+            <div class="question-zone">
+            </div>
 
-    <div><span id="question-number">0 of 5 questions</span></div>
+            <div id="quiz-zone">
+            </div>
 
-    <div class="score1">
-        <span id="incorrect-score">0</span>
-    </div>
+            <div class="question-container">
+            </div>
 
-    <div class="score2">
-        <span id="correct-score">0</span>
+            <div><span id="question-number">0 of 5 questions</span></div>
 
-    </div>
+            <div class="score-area">
+                <p class="correct-scores">Correct answers <span id="score">0</span></p>
+                <p class="incorrect-scores">Incorrect answers <span id="incorrect-score">0</span></p>
+            </div>
 
-    <div id="questions">
-        <h2>Questions</h2>
-    </div>
+            <div id="questions">
+                <h2>Questions</h2>
+            </div>
+            <form>
+                <input type="radio" id="option" name="answer-options" value="first-option">
+                <label for="option-choice"><span id="first-option-text">Choice
+                        1</span></label></span>
+                <input type="radio" id="option" name="answer-options" value="second-option">
+                <label for="option-choice"><span id="second-option-text">Choice
+                        2</span></label></span>
+                <input type="radio" id="option" name="answer-options" value="third-option">
+                <label for="option-choice"><span id="third-option-text">Choice
+                        3</span></label></span>
+                <input type="radio" id="option" name="answer-options" value="first-option">
+                <label for="option-choice"><span id="fourth-option-text">Choice
+                        4</span></label></span>
+            </form>
 
-    
-    
-    </fieldset>
+            
+            <button type="button" id="start" type="submit">Start 
+            <button type="button" id="answear-btn">Next</button>
+            <button type="button" id="restart-btn">Restart</button>
+            
+
+
 
 </main>
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
+
 </html>
