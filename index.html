@@ -27,34 +27,42 @@
             <div class="question-container">
             </div>
 
-            <div><span id="question-number">0 of 5 questions</span></div>
+            <div><span id="question-number">0/5</span></div>
 
             <div class="score-area">
-                <p class="correct-scores">Correct answers <span id="score">0</span></p>
-                <p class="incorrect-scores">Incorrect answers <span id="incorrect-score">0</span></p>
+                <p class="correct-scores">Right:<span id="score">0</span></p>
+                <p class="incorrect-scores">Wrong:<span id="incorrect-score">0</span></p>
             </div>
 
             <div id="questions">
                 <h2>Questions</h2>
             </div>
             <form>
+                <div class="wrapper">
                 <input type="radio" id="option" name="answer-options" value="first-option">
                 <label for="option-choice"><span id="first-option-text">Choice
                         1</span></label></span>
+                </div>
+                <div class="wrapper">
                 <input type="radio" id="option" name="answer-options" value="second-option">
                 <label for="option-choice"><span id="second-option-text">Choice
                         2</span></label></span>
+                </div>
+                <div class="wrapper">
                 <input type="radio" id="option" name="answer-options" value="third-option">
                 <label for="option-choice"><span id="third-option-text">Choice
                         3</span></label></span>
+                </div>
+                <div class="wrapper">
                 <input type="radio" id="option" name="answer-options" value="first-option">
                 <label for="option-choice"><span id="fourth-option-text">Choice
                         4</span></label></span>
+                </div>
             </form>
 
             
             <button type="button" id="start" type="submit">Start 
-            <button type="button" id="answear-btn">Next</button>
+            <button type="button" id="answer-btn">Next</button>
             <button type="button" id="restart-btn">Restart</button>
             
 
