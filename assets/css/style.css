@@ -17,8 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #db9833;
-     
+    background-color: #db9833; 
     /* height: 100%; */
 }
 /* Heading */
@@ -29,23 +28,25 @@ h1 {
 
 h2 {
     font-size: 40px;
-    /* border:border solid black; */
 }
 
+main{
+    border: 6px solid green;
+    padding: 30px;
+    margin:19px;   
+}
 /* Quiz */
 .primary-container{
     margin-top: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    
 }
 
 #quiz-zone{
+    box-sizing: border-box;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-   
+    display: flex; 
 }
 
 .question-container{
@@ -66,7 +67,6 @@ h2 {
     justify-content: space-evenly;
     font-size: 20px;
 }
-
 
 form{
     display:flex;
