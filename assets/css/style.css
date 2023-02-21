@@ -22,19 +22,24 @@ body{
 }
 /* Heading */
 h1 {
-    font-size: 40px;
+    font-size: bold 40px;
     text-align: center;
+    margin-top: 33px;
+    letter-spacing:2px;
 }
 
 h2 {
     font-size: 40px;
 }
 
-main{
+ /* main{
     border: 6px solid green;
-    padding: 30px;
-    margin:19px;   
-}
+    margin:87px;    
+    border-radius: 10px;
+    padding: 20px;
+ } */
+       
+ 
 /* Quiz */
 .primary-container{
     margin-top: 150px;
@@ -47,6 +52,7 @@ main{
     box-sizing: border-box;
     width: 100%;
     display: flex; 
+    
 }
 
 .question-container{
@@ -71,10 +77,8 @@ main{
 form{
     display:flex;
     flex-direction:column;
-    align-items:center;
-}
-
-
+    align-items:center;}
+    
 .wrapper input[type="radio"] {
     width: 14px;
    
@@ -83,7 +87,6 @@ form{
   .wrapper label {
     display: inline;
     margin-left: 5px;
-   
     }
 
 
@@ -95,9 +98,39 @@ button{
     width: 80px;
     border-radius: 8px;  
 }
+
+ #start{
+    margin-top:73px;
+    width: 23%;
+    height: 10%;
+    font-size: 23px;
+    letter-spacing:2px;
+} 
     
 button:hover {
         transition: 0.5s;
-        background-color:black;
+        background-color:#db9833;
     }
 
+    #quiz {
+        display: none;
+    }
+
+    #answer-btn{
+        display: none;
+    }
+
+    #restart-btn {
+        display: none;
+    }
+   /* https://www.w3schools.com/howto/howto_css_overlay.asp */
+    #overlay {
+        position: fixed;
+        bottom: 151px;
+        left: 56px;
+        right: 56px;
+        top: 116px;
+        z-index: 1;
+        background-color: #9833db;
+        border-radius: 5px;
+    }
