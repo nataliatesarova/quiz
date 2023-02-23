@@ -1,4 +1,5 @@
 //Array incorporating capital city questions and answers.
+let questionIndex =0;
 let questions = [
 
     {
@@ -130,28 +131,29 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionsContainerElement = document.getElementById('question-container');
     let choiceButtons = document.getElementById('option');
     let rightAnswer;
+    let nextQuestion = document.getElementById('next-btn');
+
 
 
     // Set the current question index to 0
-    let QuestionIndex = 0;
+    // let QuestionIndex = 0;
 
     // Set the score and incorrect score to 0
     score = 0;
     let incorrect = 0;
 
-    // event listener to start button for quiz start
+    let choices = document.getElementsByClassName('option');
+    // let nextButton = document.getElementById('next-btn');
+    let restartButton = document.getElementsByClassName('restart-btn')[0];
+    
+    // // event listener to start button for quiz start
     startButton.addEventListener('click', startQuiz);
-    // event listener for next button
+    // // event listener for next button
     nextButton.addEventListener('click', nextQuestion);
-    //event listener for restart button
+    // //event listener for restart button
     restartButton.addEventListener('click', restartQuiz);
 
 
-    let choices = document.getElementsByClassName('option');
-    let nextButton = document.getElementsByClassName('answer-btn')[0];
-    let restartButton = document.getElementsByClassName('restart-btn')[0];
-    
-    
     /**
      * start button overlay disappears and quiz appears 
      */
@@ -160,6 +162,72 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('start')
         document.getElementById("overlay").style.display = "none";
         document.getElementById("quiz").style.display = "block";
-
     }
-})
+    
+ })
+
+let questionZone = document.querySelector(".question-zone");
+
+/**
+     * can i delete this code? 
+     */
+//   questionZone.innerHTML = questions[0].question;
+
+  function displayQuestion(questionIndex) {
+    let question = questions[questionIndex];
+    // let questionZone = document.querySelector('.question-zone');
+    let questionContainer = document.querySelector('.question-container');
+    let firstOption = document.querySelector('#first-option-text');
+    let secondOption = document.querySelector('#second-option-text');
+    let thirdOption = document.querySelector('#third-option-text');
+    let fourthOption = document.querySelector('#fourth-option-text');
+    let questionNumber = document.querySelector('#question-number');
+  
+    //  questionZone.innerHTML = `${questionIndex + 1}`;
+     questionContainer.innerHTML = question.question;
+     firstOption.innerHTML = question.answers.Option1;
+     secondOption.innerHTML = question.answers.Option2;
+     thirdOption.innerHTML = question.answers.Option3;
+     fourthOption.innerHTML = question.answers.Option4;
+     questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;
+  }
+
+  displayQuestion(questionIndex);
+
+// let answerBtn = document.querySelector('#answer-btn');
+// answerBtn.addEventListener('click', () => {
+//     questionIndex++;
+//     displayQuestion(questionIndex);
+// });
+
+
+// function checkAnswer() {
+//     if(selectedAnswer === correctAnswer) {
+//         userAnswer.classList.add('correct');
+//         incrementScore();
+//     } else {
+//         userAnswer.classList.add('incorrect');
+//         incrementWrongAnswer();
+//     }
+//   }
+
+
+// function calculateCorrectAnswer(){
+
+// }
+
+// function incrementScore(){
+
+// }
+
+// function incrementWrongAnswer(){
+
+// }
+
+// function restartQuiz(){
+
+// }
+
+// function timer (){
+
+// }
