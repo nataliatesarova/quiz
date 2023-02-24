@@ -134,10 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let nextQuestion = document.getElementById('next-btn');
 
 
-
-    // Set the current question index to 0
-    // let QuestionIndex = 0;
-
     // Set the score and incorrect score to 0
     score = 0;
     let incorrect = 0;
@@ -168,10 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let questionZone = document.querySelector(".question-zone");
 
-/**
-     * can i delete this code? 
-     */
-//   questionZone.innerHTML = questions[0].question;
+
 
   function displayQuestion(questionIndex) {
     let question = questions[questionIndex];
@@ -194,11 +187,11 @@ let questionZone = document.querySelector(".question-zone");
 
   displayQuestion(questionIndex);
 
-// let answerBtn = document.querySelector('#answer-btn');
-// answerBtn.addEventListener('click', () => {
-//     questionIndex++;
-//     displayQuestion(questionIndex);
-// });
+let nextbtn = document.querySelector('#next-btn');
+nextbtn.addEventListener('click', () => {
+    questionIndex++;
+    displayQuestion(questionIndex);
+});
 
 
 // function checkAnswer() {
