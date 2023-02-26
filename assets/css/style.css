@@ -147,5 +147,14 @@ button:hover {
     width: 98%;
     }
 
+    .right-ans {
+        color: green;
+        font-weight: bold;
+    }
+    .wrong-ans {
+        columns: red;
+        font-weight: bold;
+    }
+
 
    

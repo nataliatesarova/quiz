@@ -1,5 +1,8 @@
+let rightAnswersCount = 0;
+let wrongAnswersCount = 0;
+
 //Array incorporating capital city questions and answers.
-let questionIndex =0;
+let questionIndex = 0;
 let questions = [
 
     {
@@ -10,7 +13,7 @@ let questions = [
             Option3: "Kyoto",
             Option4: "London",
         },
-        rightAnswer: "1"
+        rightAnswer: "Tokyo"
     },
 
     {
@@ -21,7 +24,7 @@ let questions = [
             Option3: "Tallinn",
             Option4: "Vilnius",
         },
-        rightAnswer: "3"
+        rightAnswer: "Tallinn"
     },
 
     {
@@ -32,7 +35,7 @@ let questions = [
             Option3: "Brasília",
             Option4: "Buenos Aires",
         },
-        rightAnswer: "3"
+        rightAnswer: "Brasília"
     },
 
     {
@@ -43,7 +46,7 @@ let questions = [
             Option3: "Tel Aviv-Yafo",
             Option4: "Jerusalem",
         },
-        rightAnswer: "4"
+        rightAnswer: "Jerusalem"
     },
 
     {
@@ -54,7 +57,7 @@ let questions = [
             Option3: "Ankara",
             Option4: "Baalbek",
         },
-        rightAnswer: "2"
+        rightAnswer: "Beirut"
     },
 
     {
@@ -65,7 +68,7 @@ let questions = [
             Option3: "Washington, D.C",
             Option4: "Chicago",
         },
-        rightAnswer: "3"
+        rightAnswer: "Washington, D.C"
     },
 
     {
@@ -76,7 +79,7 @@ let questions = [
             Option3: "George Town",
             Option4: "Kingston",
         },
-        rightAnswer: "4"
+        rightAnswer: "Kingston"
     },
 
     {
@@ -87,7 +90,7 @@ let questions = [
             Option3: "Larissa",
             Option4: "Thessaloniki",
         },
-        rightAnswer: "2"
+        rightAnswer: "Athens"
     },
 
     {
@@ -98,7 +101,7 @@ let questions = [
             Option3: "Seville",
             Option4: "Valencia",
         },
-        rightAnswer: "1"
+        rightAnswer: "Madrid"
     },
 
     {
@@ -109,7 +112,7 @@ let questions = [
             Option3: "Bangalore",
             Option4: "New Delhi",
         },
-        rightAnswer: "4"
+        rightAnswer: "New Delhi"
     },
 ];
 console.log(questions[9].rightAnswer);
@@ -131,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionsContainerElement = document.getElementById('question-container');
     let choiceButtons = document.getElementById('option');
     let rightAnswer;
-    let nextQuestion = document.getElementById('next-btn');
+    // let nextQuestion = document.getElementById('next-btn');
 
 
     // Set the score and incorrect score to 0
@@ -140,14 +143,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let choices = document.getElementsByClassName('option');
     // let nextButton = document.getElementById('next-btn');
-    let restartButton = document.getElementsByClassName('restart-btn')[0];
-    
+    // let restartButton = document.getElementsByClassName('restart-btn')[0];
+
     // // event listener to start button for quiz start
     startButton.addEventListener('click', startQuiz);
     // // event listener for next button
-    nextButton.addEventListener('click', nextQuestion);
+    // nextButton.addEventListener('click', nextQuestion);
     // //event listener for restart button
-    restartButton.addEventListener('click', restartQuiz);
+    // restartButton.addEventListener('click', restartQuiz);
 
 
     /**
@@ -159,14 +162,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("overlay").style.display = "none";
         document.getElementById("quiz").style.display = "block";
     }
-    
- })
+
+})
 
 let questionZone = document.querySelector(".question-zone");
 
 
 
-  function displayQuestion(questionIndex) {
+function displayQuestion(questionIndex) {
     let question = questions[questionIndex];
     // let questionZone = document.querySelector('.question-zone');
     let questionContainer = document.querySelector('.question-container');
@@ -175,52 +178,66 @@ let questionZone = document.querySelector(".question-zone");
     let thirdOption = document.querySelector('#third-option-text');
     let fourthOption = document.querySelector('#fourth-option-text');
     let questionNumber = document.querySelector('#question-number');
-  
-    //  questionZone.innerHTML = `${questionIndex + 1}`;
-     questionContainer.innerHTML = question.question;
-     firstOption.innerHTML = question.answers.Option1;
-     secondOption.innerHTML = question.answers.Option2;
-     thirdOption.innerHTML = question.answers.Option3;
-     fourthOption.innerHTML = question.answers.Option4;
-     questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;
-  }
 
-  displayQuestion(questionIndex);
+    //  questionZone.innerHTML = `${questionIndex + 1}`;
+    questionContainer.innerHTML = question.question;
+    firstOption.innerHTML = question.answers.Option1;
+    secondOption.innerHTML = question.answers.Option2;
+    thirdOption.innerHTML = question.answers.Option3;
+    fourthOption.innerHTML = question.answers.Option4;
+    questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;
+
+    // condition to check if it is the last question
+    // display none css for next button
+}
+
+displayQuestion(questionIndex);
 
 let nextbtn = document.querySelector('#next-btn');
 nextbtn.addEventListener('click', () => {
+    console.log('next button clicked')
     questionIndex++;
     displayQuestion(questionIndex);
 });
 
+let ansbtn = document.querySelector('#answer-btn');
+ansbtn.addEventListener('click', () => {
+    let correctAnswer = questions[questionIndex].rightAnswer;
+    /* 
+    if answer is correct, update rightAnswersCount
+    else update wrongAnswersCount
+    */
+    
+    if (document.getElementById("option1").checked) {
+        if (questions[questionIndex].answers.Option1 === correctAnswer) {
+            incrementCorrectAnswer();
+            styleOptionsOnCorrect();
+        } else {
+            incrementWrongAnswer();
+            styleOptionsOnIncorrect()
+        }
+    } else if (document.getElementById("option2").checked) {
+        if (questions[questionIndex].answers.Option2 === correctAnswer) {
+            incrementCorrectAnswer();
+        } else {
+            incrementWrongAnswer();
+        }
+    } else if (document.getElementById("option3").checked) {
+        if (questions[questionIndex].answers.Option3 === correctAnswer) {
+            incrementCorrectAnswer();
+        } else {
+            incrementWrongAnswer();
+        }
+    } else if (document.getElementById("option4").checked) {
+        if (questions[questionIndex].answers.Option4 === correctAnswer) {
+            incrementCorrectAnswer();
+        } else {
+            incrementWrongAnswer();
+        }
+    }
 
-// function checkAnswer() {
-//     if(selectedAnswer === correctAnswer) {
-//         userAnswer.classList.add('correct');
-//         incrementScore();
-//     } else {
-//         userAnswer.classList.add('incorrect');
-//         incrementWrongAnswer();
-//     }
-//   }
+    // for last response, make restart display: block css
+});
 
 
-// function calculateCorrectAnswer(){
 
-// }
-
-// function incrementScore(){
-
-// }
-
-// function incrementWrongAnswer(){
-
-// }
-
-// function restartQuiz(){
-
-// }
-
-// function timer (){
-
-// }
