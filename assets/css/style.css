@@ -32,12 +32,9 @@ h2 {
     font-size: 40px;
 }
 
- /* main{
-    border: 6px solid green;
-    margin:87px;    
-    border-radius: 10px;
-    padding: 20px;
- } */
+h3 {
+    color:white;
+}
        
  
 /* Quiz */
@@ -106,6 +103,8 @@ button{
     font-size: 23px;
     letter-spacing:2px;
 } 
+
+/* Buttons */
     
 button:hover {
         transition: 0.5s;
@@ -116,9 +115,6 @@ button:hover {
         display: none;
     }
 
-    /* #answer-btn{
-        display: none;
-    } */
 
     #restart-btn {
         display: none;
@@ -133,4 +129,23 @@ button:hover {
         z-index: 1;
         background-color: #9833db;
         border-radius: 5px;
+        max-width: 800px;
+        margin: 0 auto;
     }
+
+/* Media queries */
+
+    @media (max-width:480px) and (min-width:320px){
+      #start {
+        font-size: 16px;
+        width: 33%;    
+      }
+    }
+
+    
+    .question-container {
+    width: 98%;
+    }
+
+
+   
