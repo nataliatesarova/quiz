@@ -240,4 +240,16 @@ ansbtn.addEventListener('click', () => {
 });
 
 
+function incrementCorrectAnswer(){
+    rightAnswersCount++;
+    let rightCase = document.querySelector('#score');
+    rightCase.innerHTML = rightAnswersCount;
+}
+
+function incrementWrongAnswer(){
+    wrongAnswersCount++;
+    let wrongCase = document.querySelector('#incorrect-score');
+    wrongCase.innerHTML = wrongAnswersCount;
+}
+
 
