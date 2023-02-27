@@ -185,11 +185,10 @@ function displayQuestion(questionIndex) {
     secondOption.innerHTML = question.answers.Option2;
     thirdOption.innerHTML = question.answers.Option3;
     fourthOption.innerHTML = question.answers.Option4;
-    questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;
+    questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;}
 
     // condition to check if it is the last question
-    // display none css for next button
-}
+    // display none css for next button 
 
 displayQuestion(questionIndex);
 
@@ -236,8 +235,42 @@ ansbtn.addEventListener('click', () => {
         }
     }
 
+
+
+
     // for last response, make restart display: block css
 });
+
+// let nextbtn = document.querySelector('#next-btn');
+// let restartbtn = document.querySelector('#restart-btn');
+// let totalQuestions = document.querySelectorAll('.questions').length;
+
+//   // If the current question is the last question
+//   if (currentQuestion === totalQuestions) {
+//     // Hide the next button and show the restart button
+//     document.getElementById('next-btn').style.display = "none";
+//     document.getElementById('restart-btn').style.display = "block";
+//   }
+// // });
+
+// // Add a click event listener to the restart button
+// let restartbtn = document.querySelector('#restart-btn');
+// restartbtn.addEventListener('click', () => {
+//     questionIndex++;
+//     displayQuestion(questionIndex);
+
+//     // Reset the current question counter
+//     currentQuestion = 1;
+  
+//     // Show the next button and hide the restart button
+//     nextButton.style.display = 'block';
+//     restartButton.style.display = 'none';
+//   });
+
+
+    
+    
+
 
 
 function incrementCorrectAnswer(){
@@ -252,4 +285,21 @@ function incrementWrongAnswer(){
     wrongCase.innerHTML = wrongAnswersCount;
 }
 
+// function styleOptionsOnCorrect() {
+//     let correctanswer = document.getElemenetByClassName('.right-ans');
+//     rightAnswer.style.backgroungColor= 'green';
+// }
 
+// function styleOptionsOnIncorrect() {
+//     let incorrectanswer = document.getElementsByClassName('.wrong-ans');
+//     wrongAnswer.style.backgroungColor= 'red';
+// }
+
+
+// function restartQuiz(){
+
+// }
+
+// function timer (){
+
+// }

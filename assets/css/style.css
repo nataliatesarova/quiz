@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
- /* Global style */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+
 *  {
     /* box-sizing:border-box; */
     margin: 0;
@@ -12,8 +13,8 @@ html {
 }
 
 body{
-    font-family:"Source Sans Pro",sans-serif;
-    font-size: 32px;
+    font-family: Alegreya,sans-serif;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -22,10 +23,17 @@ body{
 }
 /* Heading */
 h1 {
-    font-size: bold 40px;
+    font-size: bold 35px;
     text-align: center;
     margin-top: 33px;
     letter-spacing:2px;
+}
+.heading{
+    font-size: Alegreya;
+}
+
+section {
+    font-family:sans-serif;
 }
 
 h2 {
@@ -34,6 +42,7 @@ h2 {
 
 h3 {
     color:white;
+    font-family: sans-serif;
 }
        
  
@@ -147,14 +156,15 @@ button:hover {
     width: 98%;
     }
 
-    .right-ans {
-        color: green;
+    /* .right-ans {
+        background-color: green;
         font-weight: bold;
     }
     .wrong-ans {
-        columns: red;
+        /* columns: red; */
+        background-color: red;
         font-weight: bold;
-    }
+    } */
 
 
    
