@@ -32,9 +32,6 @@ h1 {
     font-size: Alegreya;
 }
 
-section {
-    font-family:sans-serif;
-}
 
 h2 {
     font-size: 40px;
@@ -44,7 +41,10 @@ h3 {
     color:white;
     font-family: sans-serif;
 }
-       
+
+section {
+    font-family:sans-serif;
+}
  
 /* Quiz */
 .primary-container{
@@ -86,8 +86,7 @@ form{
     align-items:center;}
     
 .wrapper input[type="radio"] {
-    width: 14px;
-   
+    width: 14px;  
   }
   
   .wrapper label {
@@ -101,8 +100,9 @@ button{
     color: white;
     text-align: center;
     padding: 8px;
-    width: 80px;
+    width: 110px;
     border-radius: 8px;  
+    font-weight:bold;
 }
 
  #start{
@@ -110,7 +110,8 @@ button{
     width: 23%;
     height: 10%;
     font-size: 23px;
-    letter-spacing:2px;
+    letter-spacing:1px;
+    font-weight:bold;
 } 
 
 /* Buttons */
@@ -145,13 +146,24 @@ button:hover {
 /* Media queries */
 
     @media (max-width:480px) and (min-width:320px){
-      #start {
+    #start {
         font-size: 16px;
         width: 33%;    
       }
     }
+    h1{
+        font-size: 46px;
+    }
 
+    h3{
+        font-size: 27px;
+    }
+
+    * {
+        margin: 4px;
+    }
     
+
     .question-container {
     width: 98%;
     }
