@@ -167,8 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let questionZone = document.querySelector(".question-zone");
 
-
-
 function displayQuestion(questionIndex) {
     let question = questions[questionIndex];
     // let questionZone = document.querySelector('.question-zone');
@@ -185,10 +183,15 @@ function displayQuestion(questionIndex) {
     secondOption.innerHTML = question.answers.Option2;
     thirdOption.innerHTML = question.answers.Option3;
     fourthOption.innerHTML = question.answers.Option4;
-    questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;}
+    questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;
 
     // condition to check if it is the last question
     // display none css for next button 
+    if (questionIndex == 9) {
+        document.getElementById('next-btn').style.display = "none";
+    }
+}
+
 
 displayQuestion(questionIndex);
 
@@ -197,7 +200,18 @@ nextbtn.addEventListener('click', () => {
     console.log('next button clicked')
     questionIndex++;
     displayQuestion(questionIndex);
+
+    // remove classes for right or wrong answers
+    removeClasses();
 });
+
+function removeClasses() {
+    let allElements = document.querySelectorAll('*');
+    allElements.forEach((element) => {
+        element.classList.remove('right-ans');
+        element.classList.remove('wrong-ans');
+    });
+}
 
 let ansbtn = document.querySelector('#answer-btn');
 ansbtn.addEventListener('click', () => {
@@ -210,68 +224,48 @@ ansbtn.addEventListener('click', () => {
     if (document.getElementById("option1").checked) {
         if (questions[questionIndex].answers.Option1 === correctAnswer) {
             incrementCorrectAnswer();
-            styleOptionsOnCorrect();
+            let elementToStyle = document.getElementById("first-option-text");
+            styleOptionsOnCorrect(elementToStyle);
         } else {
             incrementWrongAnswer();
-            styleOptionsOnIncorrect()
+            let elementToStyle = document.getElementById("first-option-text");
+            styleOptionsOnIncorrect(elementToStyle)
         }
     } else if (document.getElementById("option2").checked) {
         if (questions[questionIndex].answers.Option2 === correctAnswer) {
             incrementCorrectAnswer();
+            let elementToStyle = document.getElementById("second-option-text");
+            styleOptionsOnCorrect(elementToStyle);
         } else {
             incrementWrongAnswer();
+            let elementToStyle = document.getElementById("second-option-text");
+            styleOptionsOnIncorrect(elementToStyle)
         }
     } else if (document.getElementById("option3").checked) {
         if (questions[questionIndex].answers.Option3 === correctAnswer) {
             incrementCorrectAnswer();
+            let elementToStyle = document.getElementById("third-option-text");
+            styleOptionsOnCorrect(elementToStyle);
         } else {
             incrementWrongAnswer();
+            let elementToStyle = document.getElementById("third-option-text");
+            styleOptionsOnIncorrect(elementToStyle)
         }
     } else if (document.getElementById("option4").checked) {
         if (questions[questionIndex].answers.Option4 === correctAnswer) {
             incrementCorrectAnswer();
+            let elementToStyle = document.getElementById("fourth-option-text");
+            styleOptionsOnCorrect(elementToStyle);
         } else {
             incrementWrongAnswer();
+            let elementToStyle = document.getElementById("fourth-option-text");
+            styleOptionsOnIncorrect(elementToStyle)
         }
     }
 
-
-
-
-    // for last response, make restart display: block css
+    
+    
 });
-
-// let nextbtn = document.querySelector('#next-btn');
-// let restartbtn = document.querySelector('#restart-btn');
-// let totalQuestions = document.querySelectorAll('.questions').length;
-
-//   // If the current question is the last question
-//   if (currentQuestion === totalQuestions) {
-//     // Hide the next button and show the restart button
-//     document.getElementById('next-btn').style.display = "none";
-//     document.getElementById('restart-btn').style.display = "block";
-//   }
-// // });
-
-// // Add a click event listener to the restart button
-// let restartbtn = document.querySelector('#restart-btn');
-// restartbtn.addEventListener('click', () => {
-//     questionIndex++;
-//     displayQuestion(questionIndex);
-
-//     // Reset the current question counter
-//     currentQuestion = 1;
-  
-//     // Show the next button and hide the restart button
-//     nextButton.style.display = 'block';
-//     restartButton.style.display = 'none';
-//   });
-
-
-    
-    
-
-
 
 function incrementCorrectAnswer(){
     rightAnswersCount++;
@@ -285,15 +279,17 @@ function incrementWrongAnswer(){
     wrongCase.innerHTML = wrongAnswersCount;
 }
 
-// function styleOptionsOnCorrect() {
-//     let correctanswer = document.getElemenetByClassName('.right-ans');
-//     rightAnswer.style.backgroungColor= 'green';
-// }
 
-// function styleOptionsOnIncorrect() {
-//     let incorrectanswer = document.getElementsByClassName('.wrong-ans');
-//     wrongAnswer.style.backgroungColor= 'red';
-// }
+
+function styleOptionsOnCorrect(elementToStyle) {
+    // another way to style
+    // elementToStyle.style.color = 'green';
+    elementToStyle.classList.add("right-ans");
+}
+
+function styleOptionsOnIncorrect(elementToStyle) {
+    elementToStyle.classList.add("wrong-ans");
+}
 
 
 // function restartQuiz(){

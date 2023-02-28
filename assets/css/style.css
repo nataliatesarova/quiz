@@ -95,6 +95,7 @@ form{
     }
 
 
+
 button{
     background-color: grey;
     color: white;
@@ -143,6 +144,11 @@ button:hover {
         margin: 0 auto;
     }
 
+    .responsive {
+        max-width: 70%;
+        height: auto;
+      }
+
 /* Media queries */
 
     @media (max-width:480px) and (min-width:320px){
@@ -168,15 +174,7 @@ button:hover {
     width: 98%;
     }
 
-    /* .right-ans {
-        background-color: green;
-        font-weight: bold;
-    }
-    .wrong-ans {
-        /* columns: red; */
-        background-color: red;
-        font-weight: bold;
-    } */
+
 
 
    
