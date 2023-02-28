@@ -113,6 +113,10 @@ form{
     font-weight:bold;
 } 
 
+#game-summary{
+    display: none;
+}
+
 /* Buttons */
 
 button{

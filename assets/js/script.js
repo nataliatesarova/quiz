@@ -189,8 +189,13 @@ function displayQuestion(questionIndex) {
     // display none css for next button 
     if (questionIndex == 9) {
         document.getElementById('next-btn').style.display = "none";
+        // make a summary text appear on game over
+        // questionNumber.innerHTML = `You answered ${questionIndex} correctly and ${wrongAnswerCount} incorrectly.`;
     }
-}
+
+
+    }
+
 
 
 displayQuestion(questionIndex);
