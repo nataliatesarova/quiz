@@ -18,7 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #db9833; 
+    background-color: lightblue; 
     /* height: 100%; */
 }
 /* Heading */
@@ -127,7 +127,7 @@ button{
     
 button:hover {
         transition: 0.5s;
-        background-color:#db9833;
+        background-color:#6495ED;
     }
 
 #quiz {
@@ -137,7 +137,7 @@ button:hover {
 
 #restart-btn {
         display: none;
-        /* margin:auto; */
+        
         
     }
         
