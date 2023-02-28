@@ -104,17 +104,6 @@ form{
         font-weight: bold;
     }
       
-
-button{
-    background-color: grey;
-    color: white;
-    text-align: center;
-    padding: 8px;
-    width: 110px;
-    border-radius: 8px;  
-    font-weight:bold;
-}
-
  #start{
     margin-top:73px;
     width: 23%;
@@ -125,22 +114,36 @@ button{
 } 
 
 /* Buttons */
+
+button{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    width: 110px;
+    border-radius: 8px;  
+    font-weight:bold;
+}
     
 button:hover {
         transition: 0.5s;
         background-color:#db9833;
     }
 
-    #quiz {
+#quiz {
         display: none;
     }
 
 
-    #restart-btn {
+#restart-btn {
         display: none;
+        /* margin:auto; */
+        
     }
-   /* https://www.w3schools.com/howto/howto_css_overlay.asp */
-    #overlay {
+        
+    
+/* https://www.w3schools.com/howto/howto_css_overlay.asp */
+#overlay {
         position: fixed;
         bottom: 151px;
         left: 56px;

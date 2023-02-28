@@ -265,7 +265,7 @@ ansbtn.addEventListener('click', () => {
 
 // for last response, make restart display: block css
         if (questionIndex == 9) {
-    document.getElementById('restart-btn').style.display = "block";}
+    document.getElementById('restart-btn').style.display = "inline-block";}
     
 
 
