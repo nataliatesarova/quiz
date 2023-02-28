@@ -89,12 +89,21 @@ form{
     width: 14px;  
   }
   
-  .wrapper label {
+.wrapper label {
     display: inline;
     margin-left: 5px;
     }
 
-
+.right-ans {
+        color: green;
+        font-weight: bold;
+    }
+    
+.wrong-ans {
+        color: red;
+        font-weight: bold;
+    }
+      
 
 button{
     background-color: grey;
@@ -144,10 +153,7 @@ button:hover {
         margin: 0 auto;
     }
 
-    .responsive {
-        max-width: 70%;
-        height: auto;
-      }
+   
 
 /* Media queries */
 
