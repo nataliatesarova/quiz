@@ -191,20 +191,16 @@ function displayQuestion(questionIndex) {
     // display none css for next button 
     if (questionIndex == 9) {
         document.getElementById('next-btn').style.display = "none";
-        // make a summary text appear on game over
-        // questionNumber.innerHTML = `You answered ${questionIndex} correctly and ${wrongAnswerCount} incorrectly.`;
     }
-
-   document.getElementById('game-summary');
-    }
-
-
+//check answer button
+}
 
 displayQuestion(questionIndex);
 
 let nextbtn = document.querySelector('#next-btn');
 nextbtn.addEventListener('click', () => {
-    console.log('next button clicked');
+    //enable check answer button
+    enableCheckAnswerButton();
     questionIndex++;
     displayQuestion(questionIndex);
 
@@ -270,15 +266,18 @@ ansbtn.addEventListener('click', () => {
         }
     }
 
-// for last response, make restart display: block css
-        if (questionIndex == 9) {
-    document.getElementById('restart-btn').style.display = "inline-block";}
-    
+    // for last response, make restart display: block css
+    if (questionIndex == 9) {
+        document.getElementById('restart-btn').style.display = "inline-block";
+        // make final score appear
+        // make a summary text appear on game over
+        let finalScoreSpanElement = document.querySelector('#final-score');
+        finalScoreSpanElement.innerHTML = `${rightAnswersCount}`;
+        document.getElementById('game-summary').style.display = "inline-block";
+        console.log('changing final score');
+    }
 
 
-
-    
-});
 
 function incrementCorrectAnswer(){
     rightAnswersCount++;
@@ -305,25 +304,6 @@ function styleOptionsOnIncorrect(elementToStyle) {
 }
 
 
-
-
-//restart the quiz 
- 
-// // function restartQuiz() {
-// //     let restartButton = document.getElementById('restart-btn')[0];
-// //     restartButton.addEventListener('click', restartQuiz) {
-//     questionIndex = 0; 
-//     //reset score count
-//     score = 0;
-//     incorrect = 0;
-//     startQuiz() 
-// //         location.reload();
-
-
-// //     }
-// //1 Reset the index
-// //﻿2. Reset the score/question counters
-// //﻿3. Call the start quiz function }
 
 
   
