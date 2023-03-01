@@ -23,22 +23,25 @@ body{
 }
 /* Heading */
 h1 {
-    font-size: bold 35px;
+    font-size: 48px;
+    font-weight: bold;
     text-align: center;
     margin-top: 33px;
     letter-spacing:2px;
+    color: black;
 }
 .heading{
-    font-size: Alegreya;
+    font-family: Alegreya;
 }
 
 
 h2 {
-    font-size: 40px;
+    font-size: 36px;
+    color: #ffffff;
+    font-family: sans-serif;
 }
 
 h3 {
-    color:white;
     font-family: sans-serif;
 }
 
@@ -121,7 +124,7 @@ form{
 
 button{
     background-color: grey;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 8px;
     width: 110px;
@@ -148,16 +151,16 @@ button:hover {
     
 /* https://www.w3schools.com/howto/howto_css_overlay.asp */
 #overlay {
-        position: fixed;
-        bottom: 151px;
-        left: 56px;
-        right: 56px;
-        top: 116px;
-        z-index: 1;
-        background-color: #9833db;
-        border-radius: 5px;
-        max-width: 800px;
-        margin: 0 auto;
+    position: fixed;
+    bottom: 151px;
+    left: 56px;
+    right: 56px;
+    top: 103px;
+    z-index: 1;
+    background-color: #9833db;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
     }
 
    
@@ -165,28 +168,33 @@ button:hover {
 /* Media queries */
 
     @media (max-width:480px) and (min-width:320px){
-    #start {
-        font-size: 16px;
-        width: 33%;    
-      }
-    }
-    h1{
-        font-size: 46px;
+         #start {
+            font-size: 16px;
+            width: 33%;    
+    } 
+    
+         h1{
+            font-size: 38px;
     }
 
-    h3{
+         h2{
+            font-size: 26px;
+    }
+
+        h3{
         font-size: 27px;
     }
 
-    * {
+        * {
         margin: 4px;
     }
     
 
-    .question-container {
-    width: 98%;
-    }
+        /* .question-container {
+            width: 98%;
+    } */
 
+} */
 
 
 

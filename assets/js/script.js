@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 let rightAnswersCount = 0;
 let wrongAnswersCount = 0;
 
@@ -143,7 +144,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let choices = document.getElementsByClassName('option');
     // let nextButton = document.getElementById('next-btn');
-    // let restartButton = document.getElementsByClassName('restart-btn')[0];
+
+    let restartButton = document.getElementById('restart-btn')[0];
 
     // // event listener to start button for quiz start
     startButton.addEventListener('click', startQuiz);
@@ -158,12 +160,12 @@ document.addEventListener('DOMContentLoaded', function () {
      */
 
     function startQuiz() {
-        console.log('start')
+        console.log('start');
         document.getElementById("overlay").style.display = "none";
         document.getElementById("quiz").style.display = "block";
     }
 
-})
+});
 
 let questionZone = document.querySelector(".question-zone");
 
@@ -193,7 +195,7 @@ function displayQuestion(questionIndex) {
         // questionNumber.innerHTML = `You answered ${questionIndex} correctly and ${wrongAnswerCount} incorrectly.`;
     }
 
-
+   document.getElementById('game-summary');
     }
 
 
@@ -202,7 +204,7 @@ displayQuestion(questionIndex);
 
 let nextbtn = document.querySelector('#next-btn');
 nextbtn.addEventListener('click', () => {
-    console.log('next button clicked')
+    console.log('next button clicked');
     questionIndex++;
     displayQuestion(questionIndex);
 
@@ -234,7 +236,7 @@ ansbtn.addEventListener('click', () => {
         } else {
             incrementWrongAnswer();
             let elementToStyle = document.getElementById("first-option-text");
-            styleOptionsOnIncorrect(elementToStyle)
+            styleOptionsOnIncorrect(elementToStyle);
         }
     } else if (document.getElementById("option2").checked) {
         if (questions[questionIndex].answers.Option2 === correctAnswer) {
@@ -244,7 +246,7 @@ ansbtn.addEventListener('click', () => {
         } else {
             incrementWrongAnswer();
             let elementToStyle = document.getElementById("second-option-text");
-            styleOptionsOnIncorrect(elementToStyle)
+            styleOptionsOnIncorrect(elementToStyle);
         }
     } else if (document.getElementById("option3").checked) {
         if (questions[questionIndex].answers.Option3 === correctAnswer) {
@@ -254,7 +256,7 @@ ansbtn.addEventListener('click', () => {
         } else {
             incrementWrongAnswer();
             let elementToStyle = document.getElementById("third-option-text");
-            styleOptionsOnIncorrect(elementToStyle)
+            styleOptionsOnIncorrect(elementToStyle);
         }
     } else if (document.getElementById("option4").checked) {
         if (questions[questionIndex].answers.Option4 === correctAnswer) {
@@ -264,7 +266,7 @@ ansbtn.addEventListener('click', () => {
         } else {
             incrementWrongAnswer();
             let elementToStyle = document.getElementById("fourth-option-text");
-            styleOptionsOnIncorrect(elementToStyle)
+            styleOptionsOnIncorrect(elementToStyle);
         }
     }
 
@@ -303,9 +305,29 @@ function styleOptionsOnIncorrect(elementToStyle) {
 }
 
 
-// function restartQuiz(){
 
-// }
+
+//restart the quiz 
+ 
+// // function restartQuiz() {
+// //     let restartButton = document.getElementById('restart-btn')[0];
+// //     restartButton.addEventListener('click', restartQuiz) {
+//     questionIndex = 0; 
+//     //reset score count
+//     score = 0;
+//     incorrect = 0;
+//     startQuiz() 
+// //         location.reload();
+
+
+// //     }
+// //1 Reset the index
+// //﻿2. Reset the score/question counters
+// //﻿3. Call the start quiz function }
+
+
+  
+
 
 // function timer (){
 

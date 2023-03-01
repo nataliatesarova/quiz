@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Capital cities quiz">
+    <meta name="keywords" content="quiz, capital cities">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
@@ -38,22 +40,22 @@
                 <form onsubmit="checkAnswer()">
                     <div class="wrapper">
                         <input type="radio" id="option1" name="answer-options" value="first-option">
-                        <label for="option-choice"><span id="first-option-text">Choice 1</span></label></span>
+                        <label for="option-choice"><span id="first-option-text">Choice 1</span></label>
                     </div>
                     <div class="wrapper">
                         <input type="radio" id="option2" name="answer-options" value="second-option">
                         <label for="option-choice"><span id="second-option-text">Choice
-                                2</span></label></span>
+                                2</span></label>
                     </div>
                     <div class="wrapper">
                         <input type="radio" id="option3" name="answer-options" value="third-option">
                         <label for="option-choice"><span id="third-option-text">Choice
-                                3</span></label></span>
+                                3</span></label>
                     </div>
                     <div class="wrapper">
                         <input type="radio" id="option4" name="answer-options" value="first-option">
                         <label for="option-choice"><span id="fourth-option-text">Choice
-                                4</span></label></span>
+                                4</span></label>
                     </div>
                 </form>
 
@@ -64,7 +66,7 @@
         <section>
 
             <div id="overlay">
-                <h3>Hi, Let's practise capital cities</h3>
+                <h2>Hi, Let's practise capital cities</h2>
                 <button type="button" id="start" type="submit">Start
                 </button>
             </div>
@@ -72,7 +74,8 @@
             <button type="button" id="answer-btn">Check answer</button>
             <button type="button" id="next-btn">Next</button>
             <button type="button" id="restart-btn">Restart</button>
-            <p id="game-summary">Game over</p>
+            <p id="game-summary">Game over. You scored <span id="final-score">0</span> questions correctly. Click restart button to play again.</p>
+            
         </section>
 
 
