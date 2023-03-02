@@ -278,7 +278,7 @@ ansbtn.addEventListener('click', () => {
     // disable check answer button
     disableCheckAnswerButton();
 });
-
+//https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute.//
 function enableCheckAnswerButton() {
     document.getElementById("answer-btn").disabled = false;
 }
