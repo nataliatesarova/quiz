@@ -19,19 +19,26 @@
     <main>
         <section>
             <div id="quiz">
-
                 <div class="primary-container">
-                    <p id="game-summary">Game over. You answered <span id="final-score">0</span> questions correctly. Click restart button to play again.</p>
+                    <p id="game-summary">
+                        Game over.
+                        <br>
+                         You answered <span id="final-score">0</span> questions
+                        correctly. 
+                        <br>
+                        Click restart button to play again.
+                    </p>
                 </div>
 
-                <div id="question-bar">
-                </div>
+                <div id="question-bar"></div>
 
                 <div><span id="question-number">0/10</span></div>
 
                 <div class="score-area">
                     <p class="correct-scores">Right:<span id="score">0</span></p>
-                    <p class="incorrect-scores">Wrong:<span id="incorrect-score">0</span></p>
+                    <p class="incorrect-scores">
+                        Wrong:<span id="incorrect-score">0</span>
+                    </p>
                 </div>
 
                 <div id="questions" class="question-container">
@@ -41,35 +48,28 @@
                 <form onsubmit="checkAnswer()">
                     <div class="wrapper">
                         <input type="radio" id="option1" name="answer-options" value="first-option">
-                        <label for="option-choice"><span id="first-option-text">Choice 1</span></label>
+                        <label for="option1"><span id="first-option-text">Choice 1</span></label>
                     </div>
                     <div class="wrapper">
                         <input type="radio" id="option2" name="answer-options" value="second-option">
-                        <label for="option-choice"><span id="second-option-text">Choice
-                                2</span></label>
+                        <label for="option2"><span id="second-option-text">Choice 2</span></label>
                     </div>
                     <div class="wrapper">
                         <input type="radio" id="option3" name="answer-options" value="third-option">
-                        <label for="option-choice"><span id="third-option-text">Choice
-                                3</span></label>
+                        <label for="option3"><span id="third-option-text">Choice 3</span></label>
                     </div>
                     <div class="wrapper">
                         <input type="radio" id="option4" name="answer-options" value="first-option">
-                        <label for="option-choice"><span id="fourth-option-text">Choice
-                                4</span></label>
+                        <label for="option4"><span id="fourth-option-text">Choice 4</span></label>
                     </div>
                 </form>
-
-                  
             </div>
         </section>
 
         <section>
-
             <div id="overlay">
                 <h2>Hi, Let's practise capital cities</h2>
-                <button type="button" id="start" type="submit">Start
-                </button>
+                <button type="submit" id="start">Start</button>
             </div>
 
             <button type="button" id="answer-btn">Check answer</button>

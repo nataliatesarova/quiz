@@ -1,37 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 
 
-*  {
+* {
     /* box-sizing:border-box; */
     margin: 0;
     padding: 0;
-    
+
 }
 
 html {
     height: 100%;
 }
 
-body{
-    font-family: Alegreya,sans-serif;
+body {
+    font-family: Alegreya, sans-serif;
     font-size: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: lightblue; 
+    background-color: lightblue;
     /* height: 100%; */
 }
+
 /* Heading */
+
+.heading {
+    font-family: Alegreya;
+}
+
 h1 {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
     margin-top: 33px;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     color: black;
-}
-.heading{
-    font-family: Alegreya;
 }
 
 
@@ -46,77 +49,80 @@ h3 {
 }
 
 section {
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
- 
+
+
+
 /* Quiz */
-.primary-container{
+.primary-container {
     margin-top: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#quiz-zone{
+#quiz-zone {
     box-sizing: border-box;
     width: 100%;
-    display: flex; 
-    
+    display: flex;
+
 }
 
-.question-container{
+.question-container {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
-#question-number{
+#question-number {
     display: flex;
-    flex-direction: column; 
-    font-size: 20px;    
+    flex-direction: column;
+    font-size: 20px;
 }
 
-.score-area{
-    display:flex;
+.score-area {
+    display: flex;
     justify-content: space-evenly;
     font-size: 20px;
 }
 
-form{
-    display:flex;
-    flex-direction:column;
-    align-items:center;}
-    
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .wrapper input[type="radio"] {
-    width: 14px;  
-  }
-  
+    width: 14px;
+}
+
 .wrapper label {
     display: inline;
     margin-left: 5px;
-    }
+}
 
 .right-ans {
-        color: green;
-        font-weight: bold;
-    }
-    
+    color: green;
+    font-weight: bold;
+}
+
 .wrong-ans {
-        color: red;
-        font-weight: bold;
-    }
-      
- #start{
-    margin-top:73px;
+    color: red;
+    font-weight: bold;
+}
+
+#start {
+    margin-top: 73px;
     width: 23%;
     height: 10%;
     font-size: 23px;
-    letter-spacing:1px;
-    font-weight:bold;
-} 
+    letter-spacing: 1px;
+    font-weight: bold;
+}
 
-#game-summary{
+#game-summary {
     display: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -124,33 +130,33 @@ form{
 
 /* Buttons */
 
-button{
+button {
     background-color: grey;
     color: #ffffff;
     text-align: center;
     padding: 8px;
     width: 110px;
-    border-radius: 8px;  
-    font-weight:bold;
+    border-radius: 8px;
+    font-weight: bold;
 }
-    
+
 button:hover {
-        transition: 0.5s;
-        background-color:#6495ED;
-    }
+    transition: 0.5s;
+    background-color: #6495ED;
+}
 
 #quiz {
-        display: none;
-    }
+    display: none;
+}
 
 
 #restart-btn {
-        display: none;
-        
-        
-    }
-        
-    
+    display: none;
+
+
+}
+
+
 /* https://www.w3schools.com/howto/howto_css_overlay.asp */
 #overlay {
     position: fixed;
@@ -163,41 +169,39 @@ button:hover {
     border-radius: 5px;
     max-width: 800px;
     margin: 0 auto;
-    }
+}
 
-   
+
 
 /* Media queries */
 
-    @media (max-width:480px) and (min-width:320px){
-         #start {
-            font-size: 16px;
-            width: 33%;    
-    } 
-    
-         h1{
-            font-size: 38px;
+@media (max-width:480px) and (min-width:320px) {
+    #start {
+        font-size: 16px;
+        width: 33%;
     }
 
-         h2{
-            font-size: 26px;
+    h1 {
+        font-size: 38px;
     }
 
-        h3{
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
         font-size: 27px;
     }
 
-        * {
+    * {
         margin: 4px;
     }
-    
 
-        /* .question-container {
+
+    /* .question-container {
             width: 98%;
     } */
 
-} */
+}
 
-
-
-   
+*/
