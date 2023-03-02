@@ -52,6 +52,9 @@ section {
     font-family: sans-serif;
 }
 
+#game-summary {
+    background-color:#40e0d0;
+}
 
 
 /* Quiz */
@@ -92,6 +95,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .wrapper input[type="radio"] {
