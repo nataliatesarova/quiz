@@ -153,6 +153,10 @@ button:hover {
     display: none;
 }
 
+input {
+    accent-color: #9370DB;
+}
+
 
 #restart-btn {
     display: none;
