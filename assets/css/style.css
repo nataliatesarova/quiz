@@ -201,12 +201,15 @@ button[disabled]{
         font-size: 27px;
     }
 
+    .primary-container{
+        display: none;
+    }
     * {
         margin: 4px;
     }
     
     #question-number {
-        padding: 100px;
+        padding: 34px;
     }
 }
 
