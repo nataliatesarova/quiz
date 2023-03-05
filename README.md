@@ -23,10 +23,18 @@ Quiz world is a multiple choice quiz on capital cities of the world. The quiz ai
 <!--- ADD IMAGE OF second question with counters changing-->
 *The next button disappears on the last question.
 <!--- ADD IMAGE OF question 10-->
-* Final summary page gives score sumary and restart button appears to give user option to try quiz again.
+* Final game over page gives score summary and restart button appears to give user option to try quiz again.
 <!--- ADD IMAGE OF summary page-->
 
+### Features left to implement
+* A possible future enhancement would be to add javascript to send an email directly to the Wave Eye Clinic.
 
+### Accesibility
+* Use of semantic HTML.
+* Use of ARIA labels allowing ientification by screen readers.
+* Use of alt attributes to provide alternative information for users.
+* Use of Adobe Color to check colour contrast.
+* Color contrasts meet the standards specified in [WCAG 2.1 contrast guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
 
 
