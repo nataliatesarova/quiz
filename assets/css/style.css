@@ -2,7 +2,7 @@
 
 
 * {
-    /* box-sizing:border-box; */
+    
     margin: 0;
     padding: 0;
 
@@ -95,7 +95,12 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    width: fit-content;
+    margin:auto;   
+}
+
+.wrapper{
+    align-self:start;
 }
 
 .wrapper input[type="radio"] {
@@ -182,6 +187,9 @@ button[disabled]{
     max-width: 800px;
     margin: 0 auto;
 }
+
+
+
 
 
 
