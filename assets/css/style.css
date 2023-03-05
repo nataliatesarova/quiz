@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     text-align: center;
     background-color: lightblue;
-    /* height: 100%; */
+    
 }
 
 /* Heading */
@@ -189,6 +189,9 @@ button[disabled]{
 }
 
 
+ /* .overlay-start {
+    margin-top: 165px;
+}  */
 
 
 

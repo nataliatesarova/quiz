@@ -1,6 +1,7 @@
-/*jshint esversion: 6 */
+// /*jshint esversion: 6 */
 let rightAnswersCount = 0;
 let wrongAnswersCount = 0;
+let checkedTheAnswer = false;
 
 //Array incorporating capital city questions and answers.
 let questionIndex = 0;
@@ -135,23 +136,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionsContainerElement = document.getElementById('question-container');
     let choiceButtons = document.getElementById('option');
     let rightAnswer;
-    // let nextQuestion = document.getElementById('next-btn');
+    
 
     // Set the score and incorrect score to 0
     score = 0;
     let incorrect = 0;
 
     let choices = document.getElementsByClassName('option');
-    // let nextButton = document.getElementById('next-btn');
+    
 
     let restartButton = document.getElementById('restart-btn')[0];
 
     // // event listener to start button for quiz start
     startButton.addEventListener('click', startQuiz);
-    // // event listener for next button
-    // nextButton.addEventListener('click', nextQuestion);
-    // //event listener for restart button
-    // restartButton.addEventListener('click', restartQuiz);
+  
+    
 
     /**
      * start button overlay disappears and quiz appears 
@@ -169,7 +168,6 @@ let questionZone = document.querySelector(".question-zone");
 
 function displayQuestion(questionIndex) {
     let question = questions[questionIndex];
-    // let questionZone = document.querySelector('.question-zone');
     let questionContainer = document.querySelector('.question-container');
     let firstOption = document.querySelector('#first-option-text');
     let secondOption = document.querySelector('#second-option-text');
@@ -177,7 +175,6 @@ function displayQuestion(questionIndex) {
     let fourthOption = document.querySelector('#fourth-option-text');
     let questionNumber = document.querySelector('#question-number');
 
-    //  questionZone.innerHTML = `${questionIndex + 1}`;
     questionContainer.innerHTML = question.question;
     firstOption.innerHTML = question.answers.Option1;
     secondOption.innerHTML = question.answers.Option2;
@@ -212,7 +209,17 @@ function removeClasses() {
         element.classList.remove('right-ans');
         element.classList.remove('wrong-ans');
     });
-}
+     
+    // when we click the next button, we set the checked property of the radio button to false
+    // so that no option will be selected on the next question
+    document.getElementById("option1").checked = false;
+    document.getElementById("option2").checked = false;
+    document.getElementById("option3").checked = false;
+    document.getElementById("option4").checked = false;
+
+    checkedTheAnswer = false;
+
+ }
 
 let ansbtn = document.querySelector('#answer-btn');
 ansbtn.addEventListener('click', () => {
@@ -311,21 +318,11 @@ function styleOptionsOnIncorrect(elementToStyle) {
 }
 
 //restart the quiz 
-// let elementToStyle = document.getElementById("third-option-text");
+
 let restartButton = document.getElementById('restart-btn');
 restartButton.addEventListener('click', () => {
-    // questionIndex = 0; 
-    // rightAnswersCount = 0;
-    // wrongAnswersCount = 0;
+    
     location.reload();
 });
  
-// function restartQuiz() {
-// }
-// //1 Reset the index
-// //�2. Reset the score/question counters
-// //�3. Call the start quiz function }
 
-  
-
-// function timer (){
