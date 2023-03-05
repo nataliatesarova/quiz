@@ -1,4 +1,4 @@
-// /*jshint esversion: 6 */
+/*jshint esversion: 6 */
 let rightAnswersCount = 0;
 let wrongAnswersCount = 0;
 let checkedTheAnswer = false;
@@ -121,36 +121,38 @@ console.log(questions[9].rightAnswer);
 
 //get elements from the DOM and store their values in variables
 document.addEventListener('DOMContentLoaded', function () {
-    let overlay = document.getElementById('overlay');
+    // let overlay = document.getElementById('overlay');
     let startButton = document.getElementById('start');
-    let primaryContainer = document.getElementById('primary-container');
+    // let primaryContainer = document.getElementById('primary-container');
 
     /* question counter 0/10 */
-    let questionCounter = document.getElementById('question-number');
+    // let questionCounter = document.getElementById('question-number');
 
     // score and incorrect score 
     let score = document.getElementById('score');
-    let incorrectScore = document.getElementById('incorrect-score');
+    // let incorrectScore = document.getElementById('incorrect-score');
     // questions, answers           
-    let question = document.getElementById('quiz');
-    let questionsContainerElement = document.getElementById('question-container');
-    let choiceButtons = document.getElementById('option');
-    let rightAnswer;
-    
+    // let question = document.getElementById('quiz');
+    // let questionsContainerElement = document.getElementById('question-container');
+    // let choiceButtons = document.getElementById('option');
+    // let rightAnswer;
+    // let nextQuestion = document.getElementById('next-btn');
 
     // Set the score and incorrect score to 0
     score = 0;
-    let incorrect = 0;
+    // let incorrect = 0;
 
-    let choices = document.getElementsByClassName('option');
+    // let choices = document.getElementsByClassName('option');
+    // let nextButton = document.getElementById('next-btn');
+
     
 
-    let restartButton = document.getElementById('restart-btn')[0];
-
-    // // event listener to start button for quiz start
+    // event listener to start button for quiz start
     startButton.addEventListener('click', startQuiz);
-  
-    
+    // // event listener for next button
+    // nextButton.addEventListener('click', nextQuestion);
+    // //event listener for restart button
+    // restartButton.addEventListener('click', restartQuiz);
 
     /**
      * start button overlay disappears and quiz appears 
@@ -164,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-let questionZone = document.querySelector(".question-zone");
+
 
 function displayQuestion(questionIndex) {
     let question = questions[questionIndex];
@@ -175,6 +177,7 @@ function displayQuestion(questionIndex) {
     let fourthOption = document.querySelector('#fourth-option-text');
     let questionNumber = document.querySelector('#question-number');
 
+    
     questionContainer.innerHTML = question.question;
     firstOption.innerHTML = question.answers.Option1;
     secondOption.innerHTML = question.answers.Option2;
@@ -194,13 +197,16 @@ displayQuestion(questionIndex);
 
 let nextbtn = document.querySelector('#next-btn');
 nextbtn.addEventListener('click', () => {
-    //enable check answer button
-    enableCheckAnswerButton();
-    questionIndex++;
-    displayQuestion(questionIndex);
+    if (checkedTheAnswer) {
+        //enable check answer button
+        enableCheckAnswerButton();
+        questionIndex++;
+        displayQuestion(questionIndex);
 
-    // remove classes for right or wrong answers
-    removeClasses();
+        // remove classes for right or wrong answers
+        removeClasses();
+  
+    }
 });
 
 function removeClasses() {
@@ -209,7 +215,8 @@ function removeClasses() {
         element.classList.remove('right-ans');
         element.classList.remove('wrong-ans');
     });
-     
+
+    
     // when we click the next button, we set the checked property of the radio button to false
     // so that no option will be selected on the next question
     document.getElementById("option1").checked = false;
@@ -218,8 +225,7 @@ function removeClasses() {
     document.getElementById("option4").checked = false;
 
     checkedTheAnswer = false;
-
- }
+}
 
 let ansbtn = document.querySelector('#answer-btn');
 ansbtn.addEventListener('click', () => {
@@ -228,6 +234,11 @@ ansbtn.addEventListener('click', () => {
     if answer is correct, update rightAnswersCount
     else update wrongAnswersCount
     */
+
+    
+    // If no answer is selected and the user clicks on the check answer button, 
+    // we shouldn't disable that button
+    // to fix that, we need to move the disable function inside the if condition
     
     if (document.getElementById("option1").checked) {
         if (questions[questionIndex].answers.Option1 === correctAnswer) {
@@ -239,6 +250,8 @@ ansbtn.addEventListener('click', () => {
             let elementToStyle = document.getElementById("first-option-text");
             styleOptionsOnIncorrect(elementToStyle);
         }
+        // disable check answer button
+        disableCheckAnswerButton();
     } else if (document.getElementById("option2").checked) {
         if (questions[questionIndex].answers.Option2 === correctAnswer) {
             incrementCorrectAnswer();
@@ -249,6 +262,8 @@ ansbtn.addEventListener('click', () => {
             let elementToStyle = document.getElementById("second-option-text");
             styleOptionsOnIncorrect(elementToStyle);
         }
+        // disable check answer button
+        disableCheckAnswerButton();
     } else if (document.getElementById("option3").checked) {
         if (questions[questionIndex].answers.Option3 === correctAnswer) {
             incrementCorrectAnswer();
@@ -259,6 +274,8 @@ ansbtn.addEventListener('click', () => {
             let elementToStyle = document.getElementById("third-option-text");
             styleOptionsOnIncorrect(elementToStyle);
         }
+        // disable check answer button
+        disableCheckAnswerButton();
     } else if (document.getElementById("option4").checked) {
         if (questions[questionIndex].answers.Option4 === correctAnswer) {
             incrementCorrectAnswer();
@@ -269,6 +286,8 @@ ansbtn.addEventListener('click', () => {
             let elementToStyle = document.getElementById("fourth-option-text");
             styleOptionsOnIncorrect(elementToStyle);
         }
+        // disable check answer button
+        disableCheckAnswerButton();
     }
 
     // for last response, make restart display: block css
@@ -280,10 +299,9 @@ ansbtn.addEventListener('click', () => {
         finalScoreSpanElement.innerHTML = `${rightAnswersCount}`;
         document.getElementById('game-summary').style.display = "inline-block";
         console.log('changing final score');
+    } else {
+        
     }
-
-    // disable check answer button
-    disableCheckAnswerButton();
 });
 //https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute.//
 function enableCheckAnswerButton() {
@@ -292,6 +310,7 @@ function enableCheckAnswerButton() {
 
 function disableCheckAnswerButton() {
     document.getElementById("answer-btn").disabled = true;
+    checkedTheAnswer = true;
 }
 
 function incrementCorrectAnswer(){
@@ -324,5 +343,3 @@ restartButton.addEventListener('click', () => {
     
     location.reload();
 });
- 
-
