@@ -1,244 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Source+Sans+Pro:ital,wght@1,300&display=swap");
 
 * {
-    
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: Alegreya, sans-serif;
-    font-size: 32px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: lightblue;
-    
+  font-family: Alegreya, sans-serif;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: lightblue;
 }
 
 /* Heading */
 
 .heading {
-    font-family: Alegreya;
+  font-family: Alegreya;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 33px;
-    letter-spacing: 2px;
-    color: black;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 33px;
+  letter-spacing: 2px;
+  color: black;
 }
-
 
 h2 {
-    font-size: 36px;
-    color: #ffffff;
-    font-family: sans-serif;   
-    
+  font-size: 36px;
+  color: #ffffff;
+  font-family: sans-serif;
 }
 
-
-
 section {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 #game-summary {
-    background-color:#40e0d0;
+  background-color: #40e0d0;
 }
-
 
 /* Quiz */
 .primary-container {
-    margin-top: 150px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #quiz-zone {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
 }
 
 .question-container {
-    width: 100%;
-    display: flex;
-    margin-bottom: 25px;
-    flex-direction: column;
-    font-size: 38px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+  flex-direction: column;
+  font-size: 38px;
 }
 
 #question-number {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 }
 
 .score-area {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin:auto;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
 }
 
-.wrapper{
-    align-self:start;
+.wrapper {
+  align-self: start;
 }
 
 .wrapper input[type="radio"] {
-    width: 14px;
+  width: 14px;
 }
 
 .wrapper label {
-    display: inline;
-    margin-left: 5px;
+  display: inline;
+  margin-left: 5px;
 }
 
 .right-ans {
-    color: green;
-    font-weight: bold;
+  color: green;
+  font-weight: bold;
 }
 
 .wrong-ans {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 #start {
-    margin-top: 45px;
-    width: 23%;
-    height: 10%;
-    font-size: 23px;
-    letter-spacing: 1px;
-    font-weight: bold;
+  margin-top: 45px;
+  width: 23%;
+  height: 10%;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 #game-summary {
-    display: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Buttons */
 
 button {
-    background-color: grey;
-    color: #ffffff;
-    text-align: center;
-    padding: 8px;
-    width: 110px;
-    border-radius: 8px;
-    font-weight: bold;
+  background-color: #6F6F6F;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  width: 110px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 button:hover {
-    transition: 0.5s;
-    background-color: #6495ED;
+  transition: 0.5s;
+  background-color: #6495ed;
 }
 
 #quiz {
-    display: none;
+  display: none;
 }
 
 input {
-    accent-color: #9370DB;
+  accent-color: #7C5EBA;
+  
 }
 
-
 #restart-btn {
-    display: none;
+  display: none;
 }
 
 #answer-btn:disabled,
-button[disabled]{
+button[disabled] {
   border: 1px solid#999999;
-  background-color:#C0C0C0;
-  
+  background-color: #c0c0c0;
 }
 
 /* https://www.w3schools.com/howto/howto_css_overlay.asp */
 #overlay {
-    position: fixed;
-    bottom: 151px;
-    left: 56px;
-    right: 56px;
-    top: 103px;
-    z-index: 1;
-    background-color: #9370DB;
-    border-radius: 5px;
-    max-width: 800px;
-    margin: 0 auto;
+  position: fixed;
+  bottom: 151px;
+  left: 56px;
+  right: 56px;
+  top: 103px;
+  z-index: 1;
+  background-color: #9370db;
+  border-radius: 5px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-img{
-    max-width: 78%;
-    padding-top: 50px;
-    
+img {
+  max-width: 78%;
+  padding-top: 50px;
 }
-
 
 .overlay-start {
-    margin-top: 6px;
-}  
-
-
-
+  margin-top: 6px;
+}
 
 /* Media queries */
 
-@media (max-width:480px) and (min-width:320px) {
-    #start {
-        font-size: 16px;
-        width: 33%;
-    }
+@media (max-width: 480px) and (min-width: 320px) {
+  #start {
+    font-size: 16px;
+    width: 33%;
+  }
 
-    .overlay-start {
-        margin-top: 114px;
-    }
+  .overlay-start {
+    margin-top: 59px;
+  }
 
-     h1 {
-        font-size: 38px;
-    }
+  img {
+    max-width: 88%;
+    padding-top: 35px;
+  }
 
-    h2 {
-        font-size: 26px;
-    }
+  h1 {
+    font-size: 38px;
+  }
 
-    .question-container{
-        font-size: 27px;
-    }
+  h2 {
+    font-size: 26px;
+  }
 
-    .radio-button-form{
-        font-size: 25px;
-    }
+  .question-container {
+    font-size: 27px;
+  }
 
-    .primary-container{
-        display: none;
-    }
-    * {
-        margin: 4px;
-    }
-    
-    #question-number {
-        padding: 34px;
-    }
+  .radio-button-form {
+    font-size: 25px;
+  }
+
+  .primary-container {
+    display: none;
+  }
+  * {
+    margin: 4px;
+  }
+
+  #question-number {
+    padding: 34px;
+  }
 }
-

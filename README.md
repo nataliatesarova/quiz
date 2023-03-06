@@ -9,7 +9,7 @@ Quiz world is a multiple choice quiz on capital cities of the world. The quiz ai
 
 <!--- ADD IMAGE OF Favicon in browser-->
 
-* The Quiz World title followed by Let's practice capital cities clearly conveys the subject matter and fun educatiional intention of the quiz and prompts the user to click the start button. The start button changes color from grey to blue when the cursor is hovered over. The welcome title and start button are presented in an overlay screen which disappears on pressing the start button which is then followed with the first quiz question.
+* The Quiz World title followed by Let's practice capital cities clearly conveys the subject matter and fun educational intention of the quiz and prompts the user to click the start button. The start button changes color from grey to blue when the cursor is hovered over. The welcome title and start button are presented in an overlay screen which disappears on pressing the start button which is then followed with the first quiz question.
 
 <!--- ADD IMAGE OF Title overlay -->
 
@@ -27,14 +27,25 @@ Quiz world is a multiple choice quiz on capital cities of the world. The quiz ai
 <!--- ADD IMAGE OF summary page-->
 
 ### Features left to implement
-* A possible future enhancement would be to add javascript to send an email directly to the Wave Eye Clinic.
+* A possible future enhancement would be to add...
 
 ### Accesibility
 * Use of semantic HTML.
-* Use of ARIA labels allowing ientification by screen readers.
+* Use of ARIA labels allowing identification by screen readers.
 * Use of alt attributes to provide alternative information for users.
 * Use of Adobe Color to check colour contrast.
 * Color contrasts meet the standards specified in [WCAG 2.1 contrast guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
+##  Design
+### Color scheme
+### Typography
+* Alegreya font from Google fonts.
+* Sans-serif.
 
+## Wireframes
+Overlay
+![wireframe desktop computer]()
+![wireframe mobile phone]()
+
+Main page
 
