@@ -230,3 +230,29 @@ img {
     padding: 34px;
   }
 }
+
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  img {
+    max-width: 38%;
+    padding-top: 37px;}
+
+  h2 {
+  font-size: 32px; }
+
+  #start {
+    margin-top: 31px;
+    width: 20%;
+    height: 10%;
+    font-size: 21px;}
+
+}
+
+/* @media (max-width: 820px) and (min-width: 1180px) {
+  img {
+    max-width: 83%;
+    padding-top: 37px;}
+
+  
+
+  } */

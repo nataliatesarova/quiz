@@ -26,8 +26,8 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 
 * Only when an answer is selected is it possible to click on the check answer button leading to highlighting in green or red if the answer is correct or incorrect respectively. The check answer button is then disabled turning from dark grey to light grey in color, and the next button becomes enabled. Once an answer is selected and check answer button clicked it is not possible to change the answer choice. 
 
-<!--- ADD IMAGE OF first question and answer slide withy correct answer-->
-<!--- ADD IMAGE OF first question and answer slide withy incorrect answer-->
+<!--- ADD IMAGE OF first question and answer slide with correct answer-->
+<!--- ADD IMAGE OF first question and answer slide with incorrect answer-->
 
 * On clicking the next button the counters of question number, and number of right and wrong answers are updated. The check answer and next button also incorporate a hover color change feature.
 <!--- ADD IMAGE OF second question with counters changing-->
