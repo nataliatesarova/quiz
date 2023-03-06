@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+
 let rightAnswersCount = 0;
 let wrongAnswersCount = 0;
 let checkedTheAnswer = false;
@@ -120,36 +120,20 @@ console.log(questions[9].rightAnswer);
 
 //get elements from the DOM and store their values in variables
 document.addEventListener("DOMContentLoaded", function () {
-  // let overlay = document.getElementById('overlay');
+  
   let startButton = document.getElementById("start");
-  // let primaryContainer = document.getElementById('primary-container');
-
-  /* question counter 0/10 */
-  // let questionCounter = document.getElementById('question-number');
-
+  
   // score and incorrect score
   let score = document.getElementById("score");
-  // let incorrectScore = document.getElementById('incorrect-score');
-  // questions, answers
-  // let question = document.getElementById('quiz');
-  // let questionsContainerElement = document.getElementById('question-container');
-  // let choiceButtons = document.getElementById('option');
-  // let rightAnswer;
-  // let nextQuestion = document.getElementById('next-btn');
+  
 
   // Set the score and incorrect score to 0
   score = 0;
-  // let incorrect = 0;
-
-  // let choices = document.getElementsByClassName('option');
-  // let nextButton = document.getElementById('next-btn');
+ 
 
   // event listener to start button for quiz start
   startButton.addEventListener("click", startQuiz);
-  // // event listener for next button
-  // nextButton.addEventListener('click', nextQuestion);
-  // //event listener for restart button
-  // restartButton.addEventListener('click', restartQuiz);
+  
 
   /**
    * start button overlay disappears and quiz appears
@@ -208,7 +192,7 @@ function removeClasses() {
     element.classList.remove("wrong-ans");
   });
 
-  // when we click the next button, we set the checked property of the radio button to false
+  // On  clicking the next button, we set the checked property of the radio button to false
   // so that no option will be selected on the next question
   document.getElementById("option1").checked = false;
   document.getElementById("option2").checked = false;
