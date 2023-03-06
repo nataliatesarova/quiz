@@ -327,8 +327,6 @@ function incrementWrongAnswer(){
 
 
 function styleOptionsOnCorrect(elementToStyle) {
-    // another way to style
-    // elementToStyle.style.color = 'green';
     elementToStyle.classList.add("right-ans");
 }
 
@@ -343,3 +341,21 @@ restartButton.addEventListener('click', () => {
     
     location.reload();
 });
+
+// let radnomIndex
+
+// // Create a loop to ask all the questions in random order
+// for (let i = 0; i < questions.length; i++) {
+
+//     // Generate a random number between 0 and the length of the array
+//     let randomIndex = Math.floor(Math.random() * questions.length);}
+  
+   
+  
+
+
+
+
+  
+    
+  
