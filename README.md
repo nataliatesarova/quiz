@@ -42,10 +42,10 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 
 ### Features left to implement
 * A possible future enhancement would be to add: 
-1. game timer.
-2. Addition of more question topics such as rivers of the world and identifying images of flags of the world.
-3. Randomised questions.
-4. Varying final summary page with animation depending on how well the user scored e.g. champagne cork exploding if 10/10 correct answers.
+* Game timer.
+* Addition of more question topics such as rivers of the world and identifying images of flags of the world.
+* Randomised questions.
+* Varying final summary page with animation depending on how well the user scored e.g. champagne cork exploding if 10/10 correct answers.
 
 ### Accesibility
 * Use of semantic HTML.
@@ -55,6 +55,19 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 
 ##  Design
 ### Color scheme
+The color scheme is as follows:
+* Main background - light blue RGB (173,216,230).
+* Overlay background - purple #7C5EBA.  
+* Game summary background - cyan #40e0d0
+* Main font - black RGB (0,0,0)
+* Overlay font - white #ffffff
+* Correct answer - green RGB 0,128,0 
+* Incorrect answer - red RGB (255,0,0) 
+* Button color - grey #6F6F6F
+* Button hover - #6495ed
+* Disabled button #c0c0c0
+* Button text - white 
+
 ### Typography
 * Alegreya font from Google fonts.
 * Sans-serif.
