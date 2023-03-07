@@ -3,7 +3,7 @@ let rightAnswersCount = 0;
 let wrongAnswersCount = 0;
 let checkedTheAnswer = false;
 
-//Array incorporating capital city questions and answers.
+//array incorporating capital city questions and answers.
 let questionIndex = 0;
 let questions = [
   {
@@ -123,22 +123,15 @@ document.addEventListener("DOMContentLoaded", function () {
   
   let startButton = document.getElementById("start");
   
-  // score and incorrect score
+  //score
   let score = document.getElementById("score");
   
-
-  // Set the score and incorrect score to 0
   score = 0;
  
-
-  // event listener to start button for quiz start
+  //event listener to start button for quiz start
   startButton.addEventListener("click", startQuiz);
   
-
-  /**
-   * start button overlay disappears and quiz appears
-   */
-
+  //start button overlay disappears and quiz appears
   function startQuiz() {
     console.log("start");
     document.getElementById("overlay").style.display = "none";
@@ -162,7 +155,7 @@ function displayQuestion(questionIndex) {
   fourthOption.innerHTML = question.answers.Option4;
   questionNumber.innerHTML = `${questionIndex + 1}/${questions.length}`;
 
-  // condition to check if it is the last question
+  // condition to check if it's the last question
   // display none css for next button
   if (questionIndex == 9) {
     document.getElementById("next-btn").style.display = "none";
@@ -192,8 +185,10 @@ function removeClasses() {
     element.classList.remove("wrong-ans");
   });
 
-  // On  clicking the next button, we set the checked property of the radio button to false
-  // so that no option will be selected on the next question
+  /*
+  On  clicking the next button, we set the checked property of the radio button to false
+  so that no option will be selected on the next question
+  */
   document.getElementById("option1").checked = false;
   document.getElementById("option2").checked = false;
   document.getElementById("option3").checked = false;
@@ -205,14 +200,11 @@ function removeClasses() {
 let ansbtn = document.querySelector("#answer-btn");
 ansbtn.addEventListener("click", () => {
   let correctAnswer = questions[questionIndex].rightAnswer;
+  
   /* 
-    if answer is correct, update rightAnswersCount
-    else update wrongAnswersCount
-    */
-
-  // If no answer is selected and the user clicks on the check answer button,
-  // we shouldn't disable that button
-  // to fix that, we need to move the disable function inside the if condition
+  if answer is correct, update rightAnswersCount
+  else update wrongAnswersCount
+  */
 
   if (document.getElementById("option1").checked) {
     if (questions[questionIndex].answers.Option1 === correctAnswer) {
@@ -224,7 +216,7 @@ ansbtn.addEventListener("click", () => {
       let elementToStyle = document.getElementById("first-option-text");
       styleOptionsOnIncorrect(elementToStyle);
     }
-    // disable check answer button
+    //disable check answer button
     disableCheckAnswerButton();
   } else if (document.getElementById("option2").checked) {
     if (questions[questionIndex].answers.Option2 === correctAnswer) {
@@ -236,7 +228,7 @@ ansbtn.addEventListener("click", () => {
       let elementToStyle = document.getElementById("second-option-text");
       styleOptionsOnIncorrect(elementToStyle);
     }
-    // disable check answer button
+    //disable check answer button
     disableCheckAnswerButton();
   } else if (document.getElementById("option3").checked) {
     if (questions[questionIndex].answers.Option3 === correctAnswer) {
@@ -248,7 +240,7 @@ ansbtn.addEventListener("click", () => {
       let elementToStyle = document.getElementById("third-option-text");
       styleOptionsOnIncorrect(elementToStyle);
     }
-    // disable check answer button
+    //disable check answer button
     disableCheckAnswerButton();
   } else if (document.getElementById("option4").checked) {
     if (questions[questionIndex].answers.Option4 === correctAnswer) {
@@ -260,11 +252,11 @@ ansbtn.addEventListener("click", () => {
       let elementToStyle = document.getElementById("fourth-option-text");
       styleOptionsOnIncorrect(elementToStyle);
     }
-    // disable check answer button
+    //disable check answer button
     disableCheckAnswerButton();
   }
 
-  // for last response, make restart display: block css
+  //for last response, restart button displayed
   if (questionIndex == 9) {
     document.getElementById("restart-btn").style.display = "inline-block";
     // make final score appear
@@ -274,7 +266,10 @@ ansbtn.addEventListener("click", () => {
     document.getElementById("game-summary").style.display = "inline-block";
   }
 });
-//https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute.//
+/*
+button enabling and disabling
+https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute.
+*/
 function enableCheckAnswerButton() {
   document.getElementById("answer-btn").disabled = false;
 }
@@ -284,28 +279,31 @@ function disableCheckAnswerButton() {
   checkedTheAnswer = true;
 }
 
+//correct score incremental increase
 function incrementCorrectAnswer() {
   rightAnswersCount++;
   let rightCase = document.querySelector("#score");
   rightCase.innerHTML = rightAnswersCount;
 }
 
+//incorrect score incremental increase
 function incrementWrongAnswer() {
   wrongAnswersCount++;
   let wrongCase = document.querySelector("#incorrect-score");
   wrongCase.innerHTML = wrongAnswersCount;
 }
 
+//styling correct answer
 function styleOptionsOnCorrect(elementToStyle) {
   elementToStyle.classList.add("right-ans");
 }
 
+//styling incorrect answer
 function styleOptionsOnIncorrect(elementToStyle) {
   elementToStyle.classList.add("wrong-ans");
 }
 
-// at the end of the game restart the quiz with restart button
-
+//when game over restart the quiz with restart button
 let restartButton = document.getElementById("restart-btn");
 restartButton.addEventListener("click", () => {
   location.reload();

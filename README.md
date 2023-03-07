@@ -72,10 +72,19 @@ The color scheme is as follows:
 * Alegreya font from Google fonts.
 * Sans-serif.
 
+### Logo
+The logo was obtained from [Font Awesome](https://fontawesome.com/).
+
+<!--- ADD IMAGE OF logo-->
+![logo]()
+
+### Images
+The world flag map image was obtained from [Stock Vault](https://www.stockvault.net/photo/157915/world-flag-map).
+
 ## Wireframes
 Overlay
 ![wireframe desktop computer]()
 ![wireframe mobile phone]()
 
-Main page
+Main page 
 
