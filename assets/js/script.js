@@ -116,7 +116,7 @@ let questions = [
     rightAnswer: "New Delhi",
   },
 ];
-console.log(questions[9].rightAnswer);
+
 
 //get elements from the DOM and store their values in variables
 document.addEventListener("DOMContentLoaded", function () {
@@ -272,8 +272,6 @@ ansbtn.addEventListener("click", () => {
     let finalScoreSpanElement = document.querySelector("#final-score");
     finalScoreSpanElement.innerHTML = `${rightAnswersCount}`;
     document.getElementById("game-summary").style.display = "inline-block";
-    console.log("changing final score");
-  } else {
   }
 });
 //https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute.//

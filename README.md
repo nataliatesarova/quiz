@@ -7,12 +7,12 @@ Quiz world is a multiple choice quiz on capital cities of the world. The quiz ai
 ### Favicon logo
 * A favicon of planet earth is incorporated to aid branding of the quiz and also enables users to more easily locate the page when multiple tabs are open.
 
-<!--- ADD IMAGE OF Favicon in browser-->
+![favicon](assets/images/favicon.png)
 
 ### Heading
 The Quiz Map title followed by a location on map logo clearly coveys the subject material of the quiz to the user.
 
-<!--- ADD IMAGE OF heading and logo -->
+![quiz name and logo](assets/images/heading%20and%20logo.png)
 
 ### Start quiz overlay
 * A colorful map incorporarting the flags of the world followed by the statement 'Let's practice capital cities' clearly conveys the fun educational intention of the quiz and prompts the user to click the start button. The start button changes color from grey to blue when the cursor is hovered over. The welcome title and start button are presented in an overlay screen which disappears on pressing the start button which is then followed with the first quiz question.
