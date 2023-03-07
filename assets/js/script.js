@@ -304,7 +304,7 @@ function styleOptionsOnIncorrect(elementToStyle) {
   elementToStyle.classList.add("wrong-ans");
 }
 
-//restart the quiz
+// at the end of the game restart the quiz with restart button
 
 let restartButton = document.getElementById("restart-btn");
 restartButton.addEventListener("click", () => {
