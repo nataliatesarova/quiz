@@ -167,7 +167,7 @@ The following git commands were used to push code to the remote repository:
   - From the menu on left select 'Pages'
   - From the source section drop-down menu, select the Branch: main
   - Click 'Save'
-  - A link will be displayed in a green banner when published successfully. The link is available [here](https://github.com/nataliatesarova/project-one)
+  - A link will be displayed in a green banner when published successfully. The link is available [here](https://github.com/nataliatesarova/quiz)
 
 ### How to Clone 
 * To clone a repository from GitHub to your local machine.
@@ -176,7 +176,6 @@ The following git commands were used to push code to the remote repository:
   - Open your terminal and change the current working directory to the location where you would like the cloned directory.
   - Type ```git clone```, paste the URL copied earlier and press enter.
 
-  
 
 
 
