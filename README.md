@@ -139,7 +139,44 @@ Quiz
 * Cascading Style Sheets (CSS) - used to describe the presentation of the document written in HTML.
 * JavaScript (JS) - used to add interactivity and dynamic functionality to web pages.
 
+### Frameworks, Libraries and Programs
+* [Balsamiq](https://balsamiq.com/wireframes/)- used to create the wireframes.
+* [Github](https://github.com/) - cloud based hosting service to save and store the files for webite.
+* Git - version control system.
+* [Visual Studio Code](https://code.visualstudio.com/) - the website was created using Microsoft Visual Studio Code integrated development environment (IDE).
+* [Font Awesome](https://fontawesome.com/) - font and icon toolkit.
+* [Google Fonts](https://fonts.google.com/about) - used to importing the fonts on the website.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - used for troubleshooting and testing features, and to solve issues with responsiveness and styling.
+* [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/) - used to show website on range of devices.
 
+## Deployment
+### Version control
+The site was created using Visual Studio Code editor (Microsoft) and pushed to github to the remote repository ‘ADD NAME’.
+
+The following git commands were used to push code to the remote repository:
+
+```git add <file>``` - This command added the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command allowed the commit of changes to the local repository queue.
+
+```git push``` - This command pushed all committed code to the remote repository on github.
+
+### Deployment to Github Pages
+* The site was deployed to GitHub pages. Deployment requires the following steps: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A link will be displayed in a green banner when published successfully. The link is available [here](https://github.com/nataliatesarova/project-one)
+
+### How to Clone 
+* To clone a repository from GitHub to your local machine.
+  - In the GitHub repository click the Code button above the repository files.
+  - Copy the URL for the repository and choose either: HTTP, SSH or GitHub CLI.
+  - Open your terminal and change the current working directory to the location where you would like the cloned directory.
+  - Type ```git clone```, paste the URL copied earlier and press enter.
+
+  
 
 
 
