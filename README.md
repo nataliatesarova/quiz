@@ -32,13 +32,13 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 
 * On clicking the next button the counters of question number, and number of right and wrong answers are updated. The check answer and next button also incorporate a hover color change feature.
 <!--- ADD IMAGE OF second question with counters changing-->
-![](assets/image/)
+![](assets/images/second.png)
 *The next button disappears on the last question.
 <!--- ADD IMAGE OF question 10-->
 ![](assets/images/restart.png)
 * Final game over page gives score summary and restart button appears to give user option to try quiz again.
 <!--- ADD IMAGE OF summary page-->
-![](assets/image/)
+![](assets/images/)
 
 ### Features left to implement
 * A possible future enhancement would be to add: 
@@ -57,16 +57,16 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 ### Color scheme
 The color scheme is as follows:
 * Main background - light blue RGB (173,216,230).
-* Overlay background - purple #7C5EBA.  
-* Game summary background - cyan #40e0d0
-* Main font - black RGB (0,0,0)
-* Overlay font - white #ffffff
-* Correct answer - green RGB 0,128,0 
-* Incorrect answer - red RGB (255,0,0) 
-* Button color - grey #6F6F6F
-* Button hover - #6495ed
-* Disabled button #c0c0c0
-* Button text - white 
+* Overlay background - purple RGB (124, 94, 186).  
+* Game summary background - cyan RGB (64, 224, 208).
+* Main font - black RGB (0,0,0).
+* Overlay font - white RGB (255, 255, 255).
+* Correct answer - green RGB (0,128,0).
+* Incorrect answer - red RGB (255,0,0). 
+* Button color - grey RGB (111, 111, 111).
+* Button hover - blue RGB (100, 149, 237).
+* Disabled button - silver RGB (192, 192, 192).
+* Button text - white RGB (255,255,255).
 
 ### Typography
 * Alegreya font from Google fonts.
@@ -76,15 +76,19 @@ The color scheme is as follows:
 The logo was obtained from [Font Awesome](https://fontawesome.com/).
 
 <!--- ADD IMAGE OF logo-->
-![logo]()
+![logo](assets/images/logo.png)
 
 ### Images
 The world flag map image was obtained from [Stock Vault](https://www.stockvault.net/photo/157915/world-flag-map).
 
 ## Wireframes
 Overlay
-![wireframe desktop computer]()
-![wireframe mobile phone]()
+![wireframe desktop computer](assets/images/1.png)
+![wireframe mobile phone](assets/images/phone1.png)
 
 Main page 
+![wireframe desktop computer](assets/images/2.png)
+![wireframe mobile phone](assets/images/phone2.png)
+![wireframe desktop computer](assets/images/3.png)
+![wireframe mobile phone](assets/images/phone3.png)
 
