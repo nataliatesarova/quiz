@@ -2,6 +2,7 @@
 Quiz world is a multiple choice quiz on capital cities of the world. The quiz aims to give an interactive, educational and fun game experience for users aged 10+ to test and expand their knowledge of the world's capital cities. At the end of the game users will get a score and option to play again. View the live site [here](https://nataliatesarova.github.io/quiz/).
 
 <!--- ADD MULTIPLE DEVICE IMAGES -->
+![multiple devices image](assets/images/multipledevices.png)
 
 ## Features 
 ### Favicon logo
@@ -80,8 +81,9 @@ The logo was obtained from [Font Awesome](https://fontawesome.com/).
 
 ### Images
 The world flag map image was obtained from [Stock Vault](https://www.stockvault.net/photo/157915/world-flag-map).
+![image](assets/images/map.jpeg)
 
-## Wireframes
+### Balsamiq frameworks
 Overlay
 ![wireframe desktop computer](assets/images/1.png)
 ![wireframe mobile phone](assets/images/phone1.png)
@@ -91,4 +93,35 @@ Main page
 ![wireframe mobile phone](assets/images/phone2.png)
 ![wireframe desktop computer](assets/images/3.png)
 ![wireframe mobile phone](assets/images/phone3.png)
+
+## Testing
+### Responsiveness
+* All pages were tested and found to be resposive using [TechSini Multi device Website Mockup Generator](https://techsini.com/multi-mockup/) and Google Chrome DevTools. The web site was tested on Google Chrome, Safari,  Microsoft Edge and Opera browsers with iPhone SE, iPhone 14 Pro, iPhone 14 Pro Max, Samsung Galaxy S8+, Ipad Air devices. Pass.
+
+### Validator
+* HTML: Errors were not found when passing through the official W3C validator.
+![html validator](assets/images/html%20validator.png)
+
+* CSS: No Errors were found when passing through the official Jigsaw validator at the final check.
+![Jigsaw validator](assets/images/cssvalidator.png)
+
+* JSHint was used to check for errors in the JavaScript code, and no errors found.
+
+### Accessibility
+* Adobe Color was used to test contrast for accessibility. 
+![adobe colour contrast test](assets/images/adobe1.png)
+![adobe colour contrast test](assets/images/adobe2.png)
+* Lighthouse in the Chrome Developer Tools was used to test website performance, accessibility, and adherance to best practices and search engine optimization (SEO) advice. 
+![lighthouse](assets/images/lighthouse.png)
+
+### Bugs
+* An error was found in HTML in Validator. When I wrote twice type for start button. It was solve by deleting one type.
+* An error was found when game over was not displaying on smaller devices. It was fix by adding in media queries margin-top.
+* In Adobe Color were found not to be enough contrast. It was fixed by adjusting shade of purple from # 9370db to # 7C5EBA.
+
+
+
+
+
+
 
