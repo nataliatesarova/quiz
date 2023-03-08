@@ -117,7 +117,6 @@ let questions = [
   },
 ];
 
-
 //get elements from the DOM and store their values in variables
 document.addEventListener("DOMContentLoaded", function () {
   

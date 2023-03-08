@@ -1,8 +1,7 @@
 # Quiz World
 Quiz world is a multiple choice quiz on capital cities of the world. The quiz aims to give an interactive, educational and fun game experience for users aged 10+ to test and expand their knowledge of the world's capital cities. At the end of the game users will get a score and option to play again. View the live site [here](https://nataliatesarova.github.io/quiz/).
 
-<!--- ADD MULTIPLE DEVICE IMAGES -->
-![multiple devices image](assets/images/multipledevices.png)
+![multiple device images](assets/images/multipledevices.png)
 
 ## Features 
 ### Favicon logo
@@ -20,11 +19,10 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 
 ![Overlay with start button](assets/images/overlay.png)
 
-### Question and Answers
+### Question and answers
 * Ten questions was included in the quiz, a number intended to be mangageable by all users. Each of the questions are followed by 4 answer choices which can be chosen by clicking a radio button. 
 
-<!--- ADD IMAGE OF first question and answer slide???-->
-![](assets/images/firstpage.png)
+![first question](assets/images/firstpage.png)
 
 * Only when an answer is selected is it possible to click on the check answer button leading to highlighting in green or red if the answer is correct or incorrect respectively. The check answer button is then disabled turning from dark grey to light grey in color, and the next button becomes enabled. Once an answer is selected and check answer button clicked it is not possible to change the answer choice. 
 
@@ -32,14 +30,14 @@ The Quiz Map title followed by a location on map logo clearly coveys the subject
 ![incorrect answer](assets/images/incorrect.png)
 
 * On clicking the next button the counters of question number, and number of right and wrong answers are updated. The check answer and next button also incorporate a hover color change feature.
-<!--- ADD IMAGE OF second question with counters changing-->
-![](assets/images/second.png)
+
+![counter changing](assets/images/second.png)
 *The next button disappears on the last question.
-<!--- ADD IMAGE OF question 10-->
-![](assets/images/restart.png)
+
+![final question](assets/images/thelastquestion.png)
 * Final game over page gives score summary and restart button appears to give user option to try quiz again.
-<!--- ADD IMAGE OF summary page-->
-![](assets/images/)
+
+![summary page](assets/images/summarypage.png)
 
 ### Features left to implement
 * A possible future enhancement would be to add: 
@@ -76,7 +74,6 @@ The color scheme is as follows:
 ### Logo
 The logo was obtained from [Font Awesome](https://fontawesome.com/).
 
-<!--- ADD IMAGE OF logo-->
 ![logo](assets/images/logo.png)
 
 ### Images
@@ -115,9 +112,34 @@ Main page
 ![lighthouse](assets/images/lighthouse.png)
 
 ### Bugs
-* An error was found in HTML in Validator. When I wrote twice type for start button. It was solve by deleting one type.
-* An error was found when game over was not displaying on smaller devices. It was fix by adding in media queries margin-top.
-* In Adobe Color were found not to be enough contrast. It was fixed by adjusting shade of purple from # 9370db to # 7C5EBA.
+* HTML Validator detected the error of double writing the word 'type' in the code for the start button. This was solved by deleting the word.
+* Game over was not displaying on smaller devices which was fixed by adding margin-top in media queries.
+
+### Manual testing
+Logo and text
+  - Confirm that the logo and text fonts were loaded, and were responsive to different screen sizes. Pass.
+
+Overlay and image
+- Check the overlay and map flag image was loaded correctly and was responsive to different screen sizes. Pass.
+- Clicking start button causes overlay screen to disappear and quiz initiation. Pass.
+
+Quiz
+- Radio buttons highlight when clicked. Pass.
+- Hover feature on check answer button and next button function. Pass.
+- Check answer button can only be clicked if radio button clicked first. Pass.
+- Once clicked the check answer button changes color to light grey and becomes disabled, and the chosen answer is highlighted in green or red if correct or incorrect respectively. Pass.
+- The next button becomes enabled only after check answer button clicked. Pass.
+- On clicking next button the subsequent question and answers are displayed. Pass.
+- Next button dissapears on final question. Pass.
+- On clicking check answer button on final question the game over summary score page is displayed. Pass.
+
+## Technologies used
+### Languages
+* HyperText Markup language (HTML) - the standard markup language for documents designed to be displayed in a web browser.
+* Cascading Style Sheets (CSS) - used to describe the presentation of the document written in HTML.
+* JavaScript (JS) - used to add interactivity and dynamic functionality to web pages.
+
+
 
 
 

@@ -46,6 +46,7 @@ section {
 
 
 /* Quiz */
+
 .primary-container {
   margin-top: 150px;
   width: 100%;
@@ -126,7 +127,6 @@ form {
   background-color: #40e0d0;
 }
 
-
 /* Buttons */
 
 button {
@@ -150,7 +150,6 @@ button:hover {
 
 input {
   accent-color: #7C5EBA;
-
 }
 
 #restart-btn {
@@ -190,7 +189,7 @@ img {
 
 @media (max-width: 1024px) and (min-width: 600px) {
   img {
-    max-width: 42%;
+    max-width: 44%;
     padding-top: 37px;
   }
 
@@ -207,8 +206,8 @@ img {
 }
 
 /* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
+  Device = Laptops, Desktops
+  Screen = B/w 1025px to 1280px
 */
 
 @media (min-width: 1026px) and (max-width: 1280px) {
@@ -233,8 +232,8 @@ img {
 }
 
 /* 
-  ##Device = galaxay fold landscape
-  ##Screen = B/w 653
+  Device = galaxay fold landscape
+  Screen = B/w 653
 */
 
 @media (min-width: 652px) and (max-width: 655px) {
@@ -269,12 +268,11 @@ img {
   #fourth-option-text {
     font-size: 30px;
   }
-
 }
 
 /* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 360px to 479px
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 360px to 479px
 */
 
 @media (min-width: 411px) and (max-width: 480px) {
@@ -295,7 +293,6 @@ img {
     font-size: 15px;
   }
 
-
   .question-container {
     font-size: 27px;
   }
@@ -303,7 +300,6 @@ img {
   #first-option-text {
     font-size: 24px;
   }
-
 
   #second-option-text {
     font-size: 24px;
@@ -316,7 +312,6 @@ img {
   #fourth-option-text {
     font-size: 24px;
   }
-
 }
 
 /* Iphone SE */
@@ -356,6 +351,18 @@ img {
 
   #start {
     width: 34%;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  .question-container{
+    font-size: 31px;
+  }
+
+  form{
+    font-size: 26px;
   }
 }
 
