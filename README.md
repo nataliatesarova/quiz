@@ -67,11 +67,12 @@ Possible future enhancements would be to add:
 * Button text - white RGB (255,255,255).
 
 ### Typography
-* Alegreya font from Google fonts.
+* Alegreya font from Google Fonts.
 * Sans-serif.
 
 ### Logo
 The logo was obtained from [Font Awesome](https://fontawesome.com/).
+
 ![logo](assets/images/logo.png)
 
 ### Images
@@ -101,15 +102,17 @@ Main page
 * JS: No errors were found when passing through the JSHint code analysis tool at the final check.
 
 ### Accessibility
-* Adobe Color was used to test contrast for accessibility. 
+* Adobe Color was used to test contrast for accessibility.
+
 ![adobe colour contrast test](assets/images/adobe1.png)
 ![adobe colour contrast test](assets/images/adobe2.png)
-* Lighthouse in the Chrome Developer Tools was used to test website performance, accessibility, and adherance to best practices and search engine optimization (SEO) advice. 
+* Lighthouse in the Chrome Developer Tools was used to test website performance, accessibility, and adherance to best practices and search engine optimization (SEO) advice.
+
 ![lighthouse](assets/images/lighthouse.png)
 
 ### Bugs
 * HTML Validator detected the error of double writing the word 'type' in the code for the start button. This was solved by deleting the word.
-* Game over was not displaying on smaller devices which was fixed by adding margin-top in media queries.
+* Game over was not displaying on smaller devices which was fixed by adding 'margin-top' in media queries.
 
 ### Manual testing
 Logo and text
