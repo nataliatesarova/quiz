@@ -72,7 +72,6 @@ Possible future enhancements would be to add:
 
 ### Logo
 The logo was obtained from [Font Awesome](https://fontawesome.com/).
-
 ![logo](assets/images/logo.png)
 
 ### Images
@@ -96,7 +95,7 @@ Main page
 
 ### Validator
 * HTML: No errors were found when passing through the W3C validator at the final check.
-![Html validator](assets/images/html%20validator.png)
+![HTML validator](assets/images/html%20validator.png)
 * CSS: No errors were found when passing through the Jigsaw validator at the final check.
 ![Jigsaw validator](assets/images/cssvalidator.png)
 * JS: No errors were found when passing through the JSHint code analysis tool at the final check.
@@ -137,11 +136,11 @@ Quiz
 * JavaScript (JS) - used to add interactivity and dynamic functionality to web pages.
 
 ### Frameworks, Libraries and Programs
-* [Balsamiq](https://balsamiq.com/wireframes/)- used to create the wireframes.
+* [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
 * [Github](https://github.com/) - cloud based hosting service to save and store the files for webite.
 * Git - version control system.
 * [Visual Studio Code](https://code.visualstudio.com/) - the website was created using Microsoft Visual Studio Code integrated development environment (IDE).
-* [Favicon Generator](https://www.favicon-generator.org/) -used to incorporate the website favicon
+* [Favicon Generator](https://www.favicon-generator.org/) - used to incorporate the favicon on the website.
 * [Font Awesome](https://fontawesome.com/) - font and icon toolkit.
 * [Google Fonts](https://fonts.google.com/about) - used to importing the fonts on the website.
 * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - used for troubleshooting and testing features, and to solve issues with responsiveness and styling.
@@ -161,11 +160,11 @@ The following git commands were used to push code to the remote repository:
 
 ### Deployment to Github Pages
 * The site was deployed to GitHub pages. Deployment requires the following steps: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the menu on left select 'Pages'
-  - From the source section drop-down menu, select the Branch: main
-  - Click 'Save'
-  - A link will be displayed in a green banner when published successfully. The link is available [here](https://github.com/nataliatesarova/quiz)
+  - In the GitHub repository, navigate to the Settings tab.
+  - From the menu on left select 'Pages'.
+  - From the source section drop-down menu, select the Branch: main.
+  - Click 'Save'.
+  - A link will be displayed in a green banner when published successfully. The link is available [here](https://github.com/nataliatesarova/quiz).
 
 ### How to Clone 
 * To clone a repository from GitHub to your local machine.
@@ -178,13 +177,13 @@ The following git commands were used to push code to the remote repository:
 I would like to thank my mentor Rory Sheridan and all the tutors, teachers and student colleagues for help and advice on the project. 
 
 ### Content and media
-Instructions on how to use the forEach loop method was provided by [free code camp](https://www.freecodecamp.org/newsjavascript-foreach-how-to-loop-through-an-array-in-js/)
+Instructions on how to use the forEach loop method was provided by [free code camp](https://www.freecodecamp.org/newsjavascript-foreach-how-to-loop-through-an-array-in-js/).
 
-Instructions on button enabling and disabling was provided by [W3 schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute)
+Instructions on button enabling and disabling was provided by [W3 schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp#:~:text=The%20disabled%20property%20sets%20or,reflects%20the%20HTML%20disabled%20attribute).
 
-The website favicon was provided by [Icons8](https://icons8.com/icons/set/favicon)
+The website favicon was provided by [Icons8](https://icons8.com/icons/set/favicon).
 
-The website logo was provided by [Font Awesome](https://fontawesome.com/)
+The website logo was provided by [Font Awesome](https://fontawesome.com/).
 
 The world map image on the layout page was provided by [stockvault](https://www.stockvault.net/photo/157915/world-flag-map). 
 
